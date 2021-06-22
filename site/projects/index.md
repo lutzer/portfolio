@@ -1,4 +1,4 @@
 ---
 layout: project-list-layout.njk
-title: Projects
+title: Lutz Reiter - projects
 ---

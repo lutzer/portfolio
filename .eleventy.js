@@ -10,7 +10,7 @@ async function imageShortcode(src, alt, sizes) {
   const imgPath = path.join(path.dirname(this.page.inputPath), src)
 
   let metadata = await Image(imgPath, {
-    widths: [300, 600],
+    widths: [300, 1024],
     formats: ["jpg"],
     urlPath: "/assets/img/",
     outputDir: OUTPUT_DIR + "/assets/img/",
@@ -31,6 +31,15 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode)
   eleventyConfig.addLiquidShortcode("image", imageShortcode)
   eleventyConfig.addJavaScriptFunction("image", imageShortcode)
+
+  // copy fonts
+  eleventyConfig.addPassthroughCopy(INPUT_DIR + "/assets/fonts")
+
+  // copy css
+  eleventyConfig.setUseGitIgnore(false)
+  eleventyConfig.addPassthroughCopy(INPUT_DIR + "/css")
+  eleventyConfig.addWatchTarget(INPUT_DIR + "/css/")
+
 
   return {
     dir: {

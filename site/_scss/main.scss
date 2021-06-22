@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'VT323';
+  src: url('/assets/fonts/VT323-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('/assets/fonts/Inconsolata-Light.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('/assets/fonts/Inconsolata-Bold.ttf')  format('truetype');
+  font-weight: bold;
+}
+
+$content-width: 600px;
+$standard-spacing: 10px;
+
+body {
+  font-family: 'Inconsolata', monospace;
+  line-height: 1.5em;
+  letter-spacing: 0.03em;
+}
+
+h1 {
+  font-family: 'VT323', monospace;
+  font-size: 250%;
+  letter-spacing: 0.02em;
+}
+
+a {
+  background-color: black;
+  color: white;
+  padding: 0.3ex 0.3em;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.content {
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left:0;
+  right:0;
+}
