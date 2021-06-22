@@ -1,0 +1,11 @@
+---
+layout: base-layout.njk
+---
+<h1>Project List</h1>
+{% image "./../assets/test.jpg", "photo of my mondjunge" %}
+<ul>
+{%- for project in collections.project -%}
+  <li><a href="{{project.url}}">{{ project.data.title }}</a></li>
+{%- endfor -%}
+</ul>
+{{ content | safe }}

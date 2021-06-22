@@ -1,0 +1,12 @@
+---
+layout: base-layout.njk
+---
+<h1>{{ title }}</h1>
+{% if thumbnail %}
+  {% image thumbnail, "thumbnail" %}
+{% endif %}
+{% if not thumbnail %}
+  <i>No thumbail</i>
+{% endif %}
+
+{{ content | safe }}
