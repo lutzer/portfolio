@@ -1,0 +1,28 @@
+@import "vars.scss";
+
+.index-layout {
+
+  display: flex;
+  height:100%;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  .content {
+    margin: auto auto;
+  }
+
+  .centered-iframe {
+    text-align: center;
+
+    iframe {
+      width: 100%;
+      max-width:500px;
+      height: 500px;
+      border:none;
+      margin:0 auto;
+      pointer-events: none;
+    }
+
+  }
+  
+}

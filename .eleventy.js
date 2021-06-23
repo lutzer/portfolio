@@ -33,7 +33,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addJavaScriptFunction("image", imageShortcode)
 
   // copy fonts
-  eleventyConfig.addPassthroughCopy(INPUT_DIR + "/assets/fonts")
+  eleventyConfig.addPassthroughCopy(INPUT_DIR + "/assets")
 
   // copy css
   eleventyConfig.setUseGitIgnore(false)
