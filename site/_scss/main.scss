@@ -1,10 +1,15 @@
 @import "vars.scss";
 
 @font-face {
-    font-family: 'OpenSans';
-    src: url('/assets/fonts/OpenSans-ExtraBold.ttf')  format('truetype');
-    font-weight: bold;
-  }
+  font-family: 'OpenSans';
+  src: url('/assets/fonts/OpenSans-ExtraBold.ttf')  format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('/assets/fonts/OpenSans-Regular.ttf')  format('truetype');
+}
 
 @font-face {
   font-family: 'Inconsolata';
@@ -26,12 +31,22 @@ body, html {
   margin:0;
 }
 
-h1 {
+h1,h2 {
   font-family: 'OpenSans', sans-serif;
-  font-size: 250%;
   letter-spacing: 0.02em;
   line-height: 1.2em;
+}
+
+h1 {
+  font-size: 250%;
   margin-top: 30px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 150%;
+  margin-top: 30px;
+  font-weight: normal;
 }
 
 a {
@@ -48,12 +63,17 @@ a {
     background-color: transparent;
     color: $primary-color;
   }
+
+  &.anchor {
+    visibility: hidden;
+    height: 0;
+  }
 }
 
 .content {
   max-width: $content-width;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px 20px 20px;
 }
 
 .center {
@@ -93,3 +113,4 @@ a {
 
 // import scss code for pages
 @import "index-page.scss";
+@import "about-page.scss";

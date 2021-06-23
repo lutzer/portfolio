@@ -3,8 +3,7 @@ layout: base-layout.njk
 ---
 <div class="content">
   {% include "navbar.njk" %}
-  <h1>Project List</h1>
-  {% image "./test.jpg", "photo of my mondjunge" %}
+  <h1>Projects</h1>
   <ul>
   {%- for project in collections.project -%}
     <li><a href="{{project.url}}">{{ project.data.title }}</a></li>

@@ -1,0 +1,27 @@
+@import "vars.scss";
+
+.about-page {
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    margin: 10px 0;
+    list-style: none;
+
+    h1 {
+      font-family: 'Inconsolata';
+      font-size: 100%;
+      margin: 0;
+      padding: 0.5ex 0;
+      line-height: 1;
+    }
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
+    
+  } 
+}
