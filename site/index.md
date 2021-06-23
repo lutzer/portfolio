@@ -1,7 +1,9 @@
 ---
 layout: index-layout.njk
 title: Lutz Reiter - hej
+date: Last Modified
 ---
+
 # Hej, my name is Lutz Reiter
 
 I am a Berlin based creative technologist, coder and creator of curious things. I like to create both, the useful and the seemingly useless things. I often work digitaly but i also like to get my hands dirty. I enjoy building and designing interactive art, visualisations, non-conventional interfaces, tools and sounds. Check out my [recent projects](/projects) to see more of my work. 
@@ -11,6 +13,10 @@ I am a Berlin based creative technologist, coder and creator of curious things. 
 </div>
 
 If you want to learn more [about me](/about), listen to my music project [Ape Finger of the Stars](https://soundcloud.com/apefinger) or follow me on [Instagram](https://www.instagram.com/lutzeputze/). Many of my code related projects and open source contributions can be found on [GitHub](https://github.com/lutzer).
+
+
+
+<!-- <span class="date">{% formatDate page.date %}</span> -->
 
 <script>
   const onFrameClicked = function() {

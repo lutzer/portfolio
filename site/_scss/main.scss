@@ -44,6 +44,7 @@ a {
   transition: background-color 300ms, color 300ms;
 
   &:hover {
+    text-decoration: none;
     background-color: transparent;
     color: $primary-color;
   }
@@ -57,6 +58,37 @@ a {
 
 .center {
   text-align: center;
+}
+
+.navbar {
+  display:block;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  list-style: none;
+  // background-color: $primary-color;
+  color: black;
+
+  li {
+    display: inline;
+
+    &:before {
+      content: "/ ";
+      display: inline;
+    }
+  }
+
+  a {
+    background-color: transparent;
+    padding: 0;
+    text-decoration: underline;
+    color: $primary-color;
+
+    &:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
 }
 
 // import scss code for pages

@@ -1,5 +1,7 @@
 const Image = require("@11ty/eleventy-img")
 const path = require("path")
+const { DateTime } = require("luxon")
+const _ = require("lodash")
 
 const OUTPUT_DIR = "dist"
 const INPUT_DIR = "site"
@@ -39,6 +41,25 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false)
   eleventyConfig.addPassthroughCopy(INPUT_DIR + "/css")
   eleventyConfig.addWatchTarget(INPUT_DIR + "/css/")
+
+  // format date
+  eleventyConfig.addShortcode("formatDate", (date) => {
+    return DateTime.fromJSDate(date).toLocaleString(DateTime.DATE_HUGE)
+  });
+
+  eleventyConfig.addFilter("urlsplit", (url) => {
+    const paths = url.split("/")
+      .filter( (val) => val.length > 0)
+      .reduce((acc, val) => {
+        acc.push({
+          name: val,
+          url: _.isEmpty(acc) ? `/${val}` : `${_.last(acc).url}/${val}`
+        })
+        return acc
+      },[])
+    console.log(paths)
+    return paths
+  });
 
 
   return {

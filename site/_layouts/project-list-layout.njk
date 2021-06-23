@@ -2,7 +2,7 @@
 layout: base-layout.njk
 ---
 <div class="content">
-  {{ content | safe }}
+  {% include "navbar.njk" %}
   <h1>Project List</h1>
   {% image "./test.jpg", "photo of my mondjunge" %}
   <ul>
@@ -10,6 +10,4 @@ layout: base-layout.njk
     <li><a href="{{project.url}}">{{ project.data.title }}</a></li>
   {%- endfor -%}
   </ul>
-
-  <a href="../">Back</a>
 </div>

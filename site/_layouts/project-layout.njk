@@ -2,6 +2,7 @@
 layout: base-layout.njk
 ---
 <div class="content">
+  {% include "navbar.njk" %}
   <h1>{{ title }}</h1>
   {% if thumbnail %}
     {% image thumbnail, "thumbnail" %}
@@ -11,6 +12,4 @@ layout: base-layout.njk
   {% endif %}
 
   {{ content | safe }}
-
-  <a href="../">Back</a>
 </div>

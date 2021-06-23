@@ -1,0 +1,6 @@
+<ul class="navbar">
+  <li><a href="/">home</a></li>
+  {% for path in page.url | urlsplit %}
+    <li><a href="{{ path.url }}">{{ path.name }}</a></li>
+  {% endfor %}
+</ul>
