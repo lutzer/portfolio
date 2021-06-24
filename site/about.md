@@ -6,13 +6,16 @@ date: Last Modified
 
 # About Me
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+By [education](#education) I am an interaction designer, programmer and biologist. After finishing my bachelor in bioinformatics, I worked several years in the field of neurobiology and behavioural science. In 2011 I started studieng Interaction Design in Göteborg. In my masther thesis, I engaged with the topic of designing for social interactions in urban communities. I worked in several [jobs](#jobs) as a creative technologist, researcher, coder and ux designer as well as a freelancer in the fields of media arts, social- and interaction Design, automotive design and autonomous driving. Building hard- and software prototypes, interactive installations, web and mobile applications. A list of my [exhibitions & publications](#exhibitions) is compiled below.
 
-* [Exhibitions & Publications](#exhibitions)
-* [Jobs](#jobs)
-* [Education](#education)
+Get in touch with me by writing to <code>lutz AT lu-re DOT de</code>.
 
-## Exhibtions & Publications <a class="anchor" name="exhibitions"></a>
+<div id="exhibitions" class="list">
+
+## Exhibtions & Publications
+
+* # 48 Stunden Neukölln
+  Contribution of digital sketches to the PARACHUTE(S) Project of 48h Neukölln (2021).
 
 * # Ape Finger of the Stars
   Musical Performance at Du Beast, Nivili, Noiseberg and Loopohole in Berlin (2019).
@@ -20,17 +23,26 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 * # Interpart
   Interactive, multi-langual Installation exhibited at Stadtwerkstatt in Berlin (2019), Rathaus Wiesbaden (2019).
 
+* # Speculum Artium | Trbovlje New Media Festival
+  Interactive Installation *Polylogue pt. 2* exhibited at Speculum Artium, Slovenia (2019).
+
 * # Bongo Forest
   Audio Visual Installation exhibited at Wilde Moehre Festival, Drebkau (2018).
 
-* # Polylogue
-  Interactive Installation exhibited at Republica 2017, Berlin (2017).
+* # Republica
+  Interactive Installation *Polyloge* exhibited at Republica, Berlin (2017).
 
-* # Polylogue pt. 2
-  Interactive Installation exhibited at the Greek Pavillion of Venice Biennale 2016, Venice (2016).
+* # Venice Biennale
+  Interactive Installation *Polylogue pt. 2* exhibited at the Greek Pavillion of Venice Biennale (2016).
 
-* # Polylogue
-  Interactive Installation exhibited at Radical Networks 2016, New York (2016),exhibited at Speculum Artium | Trbovlje New Media Festival, Slovenia (2016),exhibited at Platine Festival in Cologne (2016).
+* # Radical Networks
+  Interactive Installation *Polylogue* exhibited at Radical Networks, New York (2016).
+  
+* # Speculum Artium | Trbovlje New Media Festival
+  Interactive Installation *Polylogue* exhibited at Speculum Artium, Slovenia (2016).
+  
+* # Platine Festival in Cologne (2016).
+  Interactive Installation *Polylogue* exhibited at Platine Festival, Cologne (2016).
 
 * # Diddley Bow Workshop
   Instrument Building Workshop at Wilde Möhre Festival, Drebkau (2016).
@@ -80,33 +92,35 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 * # A common frame of reference for learned and communicated vectors in honeybee navigation
   Menzel, Kirbach, Haass, Fischer, Fuchs, Koblofsky, Lehmann, Reiter, Meyer, Nguyen, Jones, Norton, Greggers (2011): Current Biology, Volume 21, Issue 8, p645-650
 
-## Jobs <a class="anchor" name="jobs"></a>
+</div>
+<div class="align-right"><a href="#start">&#8593; Up</a></div>
+<div id="jobs" class="list">
+
+## Jobs
 
 * # 2020 - 2021
-  *Researcher* at Design Research Lab of the University of Arts Berlin: Development of a DIY Voice Interface Kit.
-
-  Working as *Freelancer*: Full-stack development of several web applications.
+  *Researcher*: Development of a DIY Voice Interface Kit at Design Research Lab of the University of Arts Berlin. *Freelancer*: Full-stack development of several web applications.
 
 * # 2017 - 2020
-  Working as a Creative Technologist at Future Center Europe in Potsdam
+  Working as a *Creative Technologist* at Future Center Europe in Potsdam.
 
 * # 2016 - 2017
-  Working as a Freelance Designer and Programmer.
+  Working as a *Freelance Designer and Programmer*.
 
 * # 2016 - 2016
-  Researcher at Design Research Lab at the University of Arts Berlin in Project MAZI and Project Community Infrastructuring.
+  *Researcher* at Design Research Lab at the University of Arts Berlin in Project MAZI and Project Community Infrastructuring.
 
 * # 2014 - 2016
-  Working as a Freelance Designer and Programmer on several projects concerning media arts, tangible prototyping, user experience and interface design, mobile app and web programming. Among my partners are Universität der Künste Berlin, SPD, Bundesdruckerei und Leuphana Universität Lüneburg.
+  Working as a *Freelance Designer* and Programmer on several projects concerning media arts, tangible prototyping, user experience and interface design, mobile app and web programming. Among my partners are Universität der Künste Berlin, SPD, Bundesdruckerei und Leuphana Universität Lüneburg.
 
 * # 2013 - 2014
-  Universität der Künste, Design Research Lab, Project Community Infrastructuring, Developing and implementing several concepts for researching and improving neighbourly interactions in urban communities.
+  *Research Assistant* at Universität der Künste, Design Research Lab, Project Community Infrastructuring, Developing and implementing several concepts for researching and improving neighbourly interactions in urban communities.
 
 * # 2010 - 2011
-  Charité Universitaätsmedizin Berlin, Neurocure, Cognitive Neurobiolgy, Development of a camera based cage for conditioning small animals
+  *Research Assistant* at Charité Universitaätsmedizin Berlin, Neurocure, Cognitive Neurobiolgy, Development of a camera based cage for conditioning small animals
 
 * # 2009 - 2010
-  AG Neurobiology, Freie Universität Berlin, work on various projects, statistical programming, teaching, data visualisation
+  *Research Assistant* at AG Neurobiology, Freie Universität Berlin, work on various projects, statistical programming, teaching, data visualisation
 
 * # 2009 - 2009
   AG Artificial Intelligence, Freie Universität Berlin, work on the RoboBee Project, programming work and field experiments
@@ -114,15 +128,25 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 * # 2005 - 2005
   Hebbel Theater Berlin, internship as stage technician
 
-## Education <a class="anchor" name="education"></a>
+</div>
+
+<div class="align-right"><a href="#start">&#8593; Up</a></div>
+
+<div id="education" class="list">
+
+## Education
 
 * # 2013 - 2014
-  Master Thesis written at Design Research Lab, Universität der Künste Berlin.
+  Master Thesis conducted at Design Research Lab, Universität der Künste Berlin.
 
 * # 2011 - 2014
   Chalmers University of Technology, Göteborg. Master in Interaction Design
 
 * # 2005 - 2009
   Freie Universität Berlin. Bachelor of Bioinformatics
+
+</div>
+
+<div class="align-right"><a href="#start">&#8593; Up</a></div>
 
 

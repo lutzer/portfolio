@@ -44,9 +44,10 @@ h1 {
 }
 
 h2 {
-  font-size: 150%;
-  margin-top: 30px;
+  font-size: 170%;
   font-weight: normal;
+  // border-bottom: 1px solid black;
+  // padding: 10px 0;
 }
 
 a {
@@ -110,6 +111,13 @@ a {
     }
   }
 }
+
+code {
+  font-family: 'Inconsolata', monospace;
+  background-color: lightgray;
+  padding: 5px;
+}
+
 
 // import scss code for pages
 @import "index-page.scss";

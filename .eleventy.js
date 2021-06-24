@@ -48,7 +48,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter("urlsplit", (url) => {
-    const paths = url.split("/")
+    return url.split("/")
       .filter( (val) => val.length > 0)
       .reduce((acc, val) => {
         acc.push({
@@ -57,8 +57,6 @@ module.exports = function(eleventyConfig) {
         })
         return acc
       },[])
-    console.log(paths)
-    return paths
   });
 
 
