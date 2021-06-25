@@ -1,6 +1,5 @@
 ---
 title: Project2
-layout: project-layout.njk
 tags: project
 date: 2021-06-21
 ---

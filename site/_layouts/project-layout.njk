@@ -1,11 +1,11 @@
 ---
 layout: base-layout.njk
 ---
-<div class="content">
+<div class="content project-page">
   {% include "navbar.njk" %}
   <h1>{{ title }}</h1>
   {% if thumbnail %}
-    {% image thumbnail, "thumbnail" %}
+    {% image thumbnail, "thumbnail", 700 %}
   {% endif %}
   {% if not thumbnail %}
     <i>No thumbail</i>

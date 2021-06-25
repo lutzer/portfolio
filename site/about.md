@@ -8,7 +8,7 @@ date: Last Modified
 
 By [education](#education) I am an interaction designer, programmer and biologist. After finishing my bachelor in bioinformatics, I worked several years in the field of neurobiology and behavioural science. In 2011 I started studieng Interaction Design in Göteborg. In my masther thesis, I engaged with the topic of designing for social interactions in urban communities. I worked in several [jobs](#jobs) as a creative technologist, researcher, coder and ux designer as well as a freelancer in the fields of media arts, social- and interaction Design, automotive design and autonomous driving. Building hard- and software prototypes, interactive installations, web and mobile applications. A list of my [exhibitions & publications](#exhibitions) is compiled below.
 
-Get in touch with me by writing to <code>lutz AT lu-re DOT de</code>.
+Get in touch with me by writing to <a id="email-address" href="">lutz AT lu-re DOT de</a>.
 
 <div id="exhibitions" class="list">
 
@@ -18,7 +18,7 @@ Get in touch with me by writing to <code>lutz AT lu-re DOT de</code>.
   Contribution of digital sketches to the PARACHUTE(S) Project of 48h Neukölln (2021).
 
 * # Ape Finger of the Stars
-  Musical Performance at Du Beast, Nivili, Noiseberg and Loopohole in Berlin (2019).
+  Musical Performances at Du Beast, Nivili, Noiseberg and Loopohole in Berlin (2019).
 
 * # Interpart
   Interactive, multi-langual Installation exhibited at Stadtwerkstatt in Berlin (2019), Rathaus Wiesbaden (2019).
@@ -41,7 +41,7 @@ Get in touch with me by writing to <code>lutz AT lu-re DOT de</code>.
 * # Speculum Artium | Trbovlje New Media Festival
   Interactive Installation *Polylogue* exhibited at Speculum Artium, Slovenia (2016).
   
-* # Platine Festival in Cologne (2016).
+* # Platine Festival
   Interactive Installation *Polylogue* exhibited at Platine Festival, Cologne (2016).
 
 * # Diddley Bow Workshop
@@ -50,17 +50,17 @@ Get in touch with me by writing to <code>lutz AT lu-re DOT de</code>.
 * # The MAZI archive
   Prototype exhibited in Prinzessinengarten, Berlin (2016).
 
-* # Lullaby Box
-  Interactive Installation exhibited at re:publica | TEN conference, Berlin (2016).
+* # re:publica | TEN
+  Interactive Installation *Lullaby Box* exhibited at re:publica | TEN conference, Berlin (2016).
 
-* # Polylogue
-  Interactive Installation exhibited at Transmediale 16 in Berlin (2016).
+* # Transmediale 16
+  Interactive Installation *Polyloge* exhibited at Transmediale 16 in Berlin (2016).
 
 * # Honeybees Learn Landscape Features during Exploratory Orientation Flights
   Jacqueline Degen, Andreas Kirbach, Lutz Reiter, Gisela Manz,Uwe Greggers, Randolf Menzel in Current Biology 26, 2800–2804 (2016)
 
-* # Community Wireless Networks
-  Workshop about Offline Networks held with Andreas Unteidig at the Living Future! Conference in Tel Aviv (2015).
+* # Living Future! Conference 
+  Workshop about Community Wireless Networks held with Andreas Unteidig at the Living Future! Conference in Tel Aviv (2015).
 
 * # Pinpoint Mehringplatz
   Interactive Installation exhibited at Mehringplatz in Berlin-Kreuzberg (2015).
@@ -93,7 +93,6 @@ Get in touch with me by writing to <code>lutz AT lu-re DOT de</code>.
   Menzel, Kirbach, Haass, Fischer, Fuchs, Koblofsky, Lehmann, Reiter, Meyer, Nguyen, Jones, Norton, Greggers (2011): Current Biology, Volume 21, Issue 8, p645-650
 
 </div>
-<div class="align-right"><a href="#start">&#8593; Up</a></div>
 <div id="jobs" class="list">
 
 ## Jobs
@@ -129,9 +128,6 @@ Get in touch with me by writing to <code>lutz AT lu-re DOT de</code>.
   Hebbel Theater Berlin, internship as stage technician
 
 </div>
-
-<div class="align-right"><a href="#start">&#8593; Up</a></div>
-
 <div id="education" class="list">
 
 ## Education
@@ -146,7 +142,5 @@ Get in touch with me by writing to <code>lutz AT lu-re DOT de</code>.
   Freie Universität Berlin. Bachelor of Bioinformatics
 
 </div>
-
-<div class="align-right"><a href="#start">&#8593; Up</a></div>
 
 

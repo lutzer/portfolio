@@ -1,0 +1,89 @@
+@import "vars.scss";
+
+.project-list-page {
+
+  .fixed-navbar {
+    position: fixed;
+    top: 0;
+    width: $content-width;
+    z-index: 2;
+    
+    ul {
+      // background-color: white;
+      width: 100%;
+    }
+  }
+
+  .project-list {
+    // position: absolute;
+    // top: 0;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
+    // z-index: 1;
+    // overflow: hidden;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      width: $content-width;
+      margin: 0 auto;
+      scroll-snap-type: y mandatory;
+    }
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      // background-color: red;
+
+      .project-list-item {
+        position: relative;
+
+
+        // text-align: center;
+
+        p {
+          display: inline;
+        }
+
+        h2 {
+          position: absolute;
+          font-family: $font1;
+          top: $standard-spacing*2;
+          left: $standard-spacing;
+          background-color: white;
+          margin: 0;
+          padding: 0.1em 0.2em;
+          font-weight: bold;
+
+        }
+
+        img, .placeholder {
+          display: block;
+          width:100%;
+          max-height:40vh;
+          margin: $standard-spacing auto;
+          object-fit: cover;
+          // border:1px solid black;
+          // padding: 5px;
+        }
+
+        .placeholder {
+          display: table;
+          height: 25vh;
+          text-align: center;
+
+          p {
+            display: table-cell; 
+            vertical-align: middle;
+            opacity: 0.3;
+          }
+        }
+      }
+    }
+  }
+}
+

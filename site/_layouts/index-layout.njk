@@ -8,3 +8,15 @@ layout: base-layout.njk
     </div>
   </div>
 </div>
+
+<script>
+  const onFrameClicked = function() {
+    document.location.reload()
+  }
+  const onResize = function() {
+    const sketch = document.getElementById('sketch')
+    sketch.style.height = sketch.clientWidth + "px"
+  }
+  window.addEventListener("resize", onResize)
+  onResize()
+</script>

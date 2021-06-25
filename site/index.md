@@ -18,15 +18,5 @@ If you want to learn more [about me](/about), listen to my music project [Ape Fi
 
 <!-- <span class="date">{% formatDate page.date %}</span> -->
 
-<script>
-  const onFrameClicked = function() {
-    document.location.reload()
-  }
-  const onResize = function() {
-    const sketch = document.getElementById('sketch')
-    sketch.style.height = sketch.clientWidth + "px"
-  }
-  window.addEventListener("resize", onResize)
-  onResize()
-</script>
+
 

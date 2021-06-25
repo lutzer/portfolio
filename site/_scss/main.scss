@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('/assets/fonts/OpenSans-ExtraBold.ttf')  format('truetype');
+  src: url('/assets/fonts/OpenSans-Bold.ttf')  format('truetype');
   font-weight: bold;
 }
 
@@ -20,6 +20,10 @@
   font-family: 'Inconsolata';
   src: url('/assets/fonts/Inconsolata-Bold.ttf')  format('truetype');
   font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body, html {
@@ -118,7 +122,24 @@ code {
   padding: 5px;
 }
 
+.uplink {
+  visibility:hidden;
+  position:fixed;
+  bottom: $large-spacing;
+  right: $large-spacing;
+  text-align: center;
+}
+
+body.header-not-at-top {
+  .uplink {
+    visibility:visible;
+  }
+}
+
+
 
 // import scss code for pages
 @import "index-page.scss";
 @import "about-page.scss";
+@import "project-page.scss";
+@import "project-list-page.scss";

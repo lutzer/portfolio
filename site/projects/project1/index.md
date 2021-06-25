@@ -1,6 +1,5 @@
 ---
 title: Project1
-layout: project-layout.njk
 tags: project
 thumbnail: day01.png
 date: 2021-06-22

@@ -1,0 +1,23 @@
+<script>
+ const debounce = function(func, wait = 100) {
+    let timeout;
+    return function(...args) {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        func.apply(this, args);
+      }, wait);
+    };
+  }
+
+  const throttle = function(func, wait = 100) {
+    let timeout = null;
+    return function(...args) {
+      if (timeout === null) {
+        timeout = setTimeout(() => {
+          func.apply(this, args);
+          timeout = null;
+        }, wait); 
+      }
+    };
+  }
+</script>

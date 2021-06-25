@@ -1,12 +1,30 @@
 ---
 layout: base-layout.njk
 ---
-<div class="content">
-  {% include "navbar.njk" %}
-  <h1>Projects</h1>
-  <ul>
-  {%- for project in collections.project -%}
-    <li><a href="{{project.url}}">{{ project.data.title }}</a></li>
-  {%- endfor -%}
-  </ul>
+<div class="content project-list-page">
+  <div class="fixed-navbar">
+    {% include "navbar.njk" %}
+  </div>
+  {# <h1>Projects</h1> #}
+  <div class="project-list">
+    <ul>
+    {%- for project in collections.project -%}
+      <li>
+        <div class="project-list-item">
+          <h2>{{ project.data.title }}</h2>
+          {% if project.data.thumbnail %}
+            {% image project.fileSlug+"/"+project.data.thumbnail, project.data.title, 1024 %}
+          {% else %}
+            <div class="placeholder"><p>No thumbnail</p></div>
+          {% endif %}
+          <p>
+            {{ project.templateContent | abstract | safe }}
+          </p>
+          <a href="{{ project.url }}">read more</a> 
+          </div>
+      </li>
+    {%- endfor -%}
+    </ul>
+  </div>
+  {% include "uplink.njk" %}
 </div>

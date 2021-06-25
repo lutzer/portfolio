@@ -8,9 +8,26 @@ title: Lutz Reiter
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/css/styles.css">
+    {% include "scripts.njk" %}
   </head>
   <body>
-    <span id="start"/>
     {{ content | safe }}
   </body>
 </html>
+
+<script>
+  const SCROLL_OFFSET = 200
+
+  const scrollToTop = function(e) {
+    window.scrollTo({ behavior: 'smooth', top: 0 })
+    e.preventDefault()
+  }
+
+  document.addEventListener('scroll', throttle(function() {
+    if (window.scrollY > SCROLL_OFFSET) {
+      document.body.classList.add("header-not-at-top");
+    } else {
+      document.body.classList.remove("header-not-at-top");
+    }
+  }))
+</script>
