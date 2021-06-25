@@ -3,6 +3,7 @@ title: Planetary Sequencer
 tags: project
 thumbnail: interface.png
 date: 2020-03-01
+color: 0
 ---
 
 A circular sequencer based on gravitational fields and planetary movements.

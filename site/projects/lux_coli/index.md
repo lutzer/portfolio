@@ -4,11 +4,14 @@ tags: project
 thumbnail: render.jpg
 footer: Created in collaboration with Nuno de la Serna
 date: 2019-06-22
+color: 1
 ---
 
 Lux Coli is an interactive kinetic light installation, which reacts on the presence of people around it. It is composed of 16 individual limbs, each represented by a 1 meter long light bar that sits on one side on a rotatable joint. Together they form a moving, breathing organism that senses its environment through proximity sensors. Depending on its surrounding and the people within it, the installation shows different emotional responses.
 
 <span class="more"></span>
+
+{% image "render.jpg", "Render of Installation", 1500 %}
 
 This project is currently work in progress.
 

@@ -24,10 +24,27 @@
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     background-color: white;
-    transition: background-color 500ms;
+    transition: background-color 500ms, color 500ms;
 
-    &.theme1 {
+    &.color-0 {
+      background-color: white;
+    }
+
+    &.color-1 {
       background-color: aquamarine;
+    }
+
+    &.color-2 {
+      background-color: palevioletred;
+    }
+
+    &.color-3 {
+      background-color: black;
+      color: white;
+
+      h2 {
+        background-color: black !important;
+      }
     }
 
     .project-list-item {

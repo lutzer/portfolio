@@ -1,1 +1,4 @@
-{ "layout": "project-layout.njk" }
+{ 
+  "layout": "project-layout.njk",
+  "color": 0
+}

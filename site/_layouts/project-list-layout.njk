@@ -8,7 +8,7 @@ layout: base-layout.njk
   {# <h1>Projects</h1> #}
   <div id="project-list">
     {%- for project in collections.project -%}
-      <div class="project-list-item">
+      <div class="project-list-item" data-color="{{ project.data.color }}">
         <div class="center">
           <h2>{{ project.data.title }}</h2>
           {% if project.data.thumbnail %}
@@ -30,12 +30,24 @@ layout: base-layout.njk
 <script>
   window.addEventListener("load", function() {
     const projectList = document.getElementById("project-list")
-    projectList.addEventListener("scroll", throttle(function() {
-      if (projectList.scrollTop > 500) {
-        projectList.classList.add("theme1")
-      } else {
-        projectList.className = ""
+    const projectItems = Array.from(document.getElementsByClassName("project-list-item"))
+      .map((item) => {
+        return { 
+          scrollPosition: item.offsetTop - projectList.offsetHeight/2,
+          color: item.getAttribute("data-color")
+        }
+      })
+
+    function changeTheme() {
+      for (const item of projectItems) {
+        if (projectList.scrollTop > item.scrollPosition) {
+          projectList.className = "color-"+item.color
+        } else {
+          break
+        }
       }
-    }, 250))
+    }
+    changeTheme()
+    projectList.addEventListener("scroll", throttle(changeTheme, 250))
   })
 </script>
