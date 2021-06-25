@@ -27,7 +27,7 @@ html {
 }
 
 body, html {
-  font-family: 'Inconsolata', monospace;
+  font-family: $font1;
   line-height: 1.5em;
   letter-spacing: 0.03em;
   height:100%;
@@ -36,7 +36,7 @@ body, html {
 }
 
 h1,h2 {
-  font-family: 'OpenSans', sans-serif;
+  font-family: $font2;
   letter-spacing: 0.02em;
   line-height: 1.2em;
 }
@@ -78,7 +78,7 @@ a {
 .content {
   max-width: $content-width;
   margin: 0 auto;
-  padding: 0 20px 20px 20px;
+  padding: 0 $outer-margin $outer-margin $outer-margin;
 }
 
 .center {
@@ -117,22 +117,23 @@ a {
 }
 
 code {
-  font-family: 'Inconsolata', monospace;
+  font-family: $font1;
   background-color: lightgray;
   padding: 5px;
 }
 
 .uplink {
-  visibility:hidden;
   position:fixed;
-  bottom: $large-spacing;
+  bottom: -100px;
   right: $large-spacing;
   text-align: center;
+  z-index: 99;
+  transition: bottom 500ms;
 }
 
 body.header-not-at-top {
   .uplink {
-    visibility:visible;
+    bottom: $large-spacing;
   }
 }
 

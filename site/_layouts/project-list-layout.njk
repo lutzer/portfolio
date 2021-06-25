@@ -6,25 +6,36 @@ layout: base-layout.njk
     {% include "navbar.njk" %}
   </div>
   {# <h1>Projects</h1> #}
-  <div class="project-list">
-    <ul>
+  <div id="project-list">
     {%- for project in collections.project -%}
-      <li>
-        <div class="project-list-item">
+      <div class="project-list-item">
+        <div class="center">
           <h2>{{ project.data.title }}</h2>
           {% if project.data.thumbnail %}
             {% image project.fileSlug+"/"+project.data.thumbnail, project.data.title, 1024 %}
           {% else %}
-            <div class="placeholder"><p>No thumbnail</p></div>
+            <div class="placeholder"><p>Nothing to see</p></div>
           {% endif %}
           <p>
             {{ project.templateContent | abstract | safe }}
           </p>
           <a href="{{ project.url }}">read more</a> 
           </div>
-      </li>
+      </div>
     {%- endfor -%}
-    </ul>
   </div>
   {% include "uplink.njk" %}
 </div>
+
+<script>
+  window.addEventListener("load", function() {
+    const projectList = document.getElementById("project-list")
+    projectList.addEventListener("scroll", throttle(function() {
+      if (projectList.scrollTop > 500) {
+        projectList.classList.add("theme1")
+      } else {
+        projectList.className = ""
+      }
+    }, 250))
+  })
+</script>
