@@ -15,7 +15,7 @@
         }
 
         #header {
-          background-image: linear-gradient(to top, color.change(nth($theme, 2), $alpha: 0), color.change(nth($theme, 2), $alpha: 1));
+          background-image: linear-gradient(to top, color.change(nth($theme, 2), $alpha: 0), color.change(nth($theme, 2), $alpha: 1) 90%);
         }
       }
     }
@@ -44,7 +44,7 @@
     z-index: 2;
     opacity: 1;
     // background-color: blue;
-    animation: fade-transition $theme-transition-time*2;
+    animation: fade-transition $theme-transition-time;
 
     @keyframes fade-transition {
       0%   {opacity: 0}

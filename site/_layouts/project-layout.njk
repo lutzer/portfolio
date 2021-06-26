@@ -1,8 +1,12 @@
 ---
 layout: base-layout.njk
 ---
-<div class="content project-page">
-  {% include "navbar.njk" %}
-  <h1>{{ title }}</h1>
-  {{ content | safe }}
+<div id="color-theme" class="project-page color-{{color}}">
+  <div class="content">
+    {% include "navbar.njk" %}
+    <h1>{{ title | safe }}</h1>
+    {{ content | safe }}
+    <a href="../#{{ page.fileSlug }}">&#8592; Back</a>
+  </div>
+  {% include "uplink.njk" %}
 </div>

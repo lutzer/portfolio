@@ -8,10 +8,10 @@ layout: base-layout.njk
     </div>
     {# <h1>Projects</h1> #}
     <div id="project-list">
-      {%- for project in collections.project -%}
-        <div class="project-list-item" data-color="{{ project.data.color }}">
+      {%- for project in collections.project | reverse -%}
+        <div id="{{project.fileSlug}}" class="project-list-item" data-color="{{ project.data.color }}">
           <div class="center">
-            <h2>{{ project.data.title }}</h2>
+            <h2>{{ project.data.title | safe }}</h2>
             {% if project.data.thumbnail %}
               {% image project.fileSlug+"/"+project.data.thumbnail, project.data.title, 1024 %}
             {% else %}

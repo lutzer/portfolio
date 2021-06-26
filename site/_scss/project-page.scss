@@ -1,6 +1,13 @@
 @import "vars.scss";
 
 .project-page {
+  min-height: 100%;
+
+  @each $theme in $color-themes {
+    &.color-#{nth($theme, 1)} {
+        background-color: nth($theme, 2);
+    }
+  }
 
   img {
     max-width:100%;

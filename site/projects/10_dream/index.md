@@ -1,8 +1,9 @@
 ---
-title: 10 Dream
+title: "&#35;10 Dream"
 tags: project
 thumbnail: render.png
 color: 3
+date: 2020-08-01
 ---
 
 The phase of sleep is one of the most intimate and silent recurring moments of life. #10 Dream is an audio-visual installation, that is capturing this very intimate moment, making it tangible to the visitor by actuating two long piano strings with pre-recorded EEG data.
