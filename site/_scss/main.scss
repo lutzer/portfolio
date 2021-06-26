@@ -92,7 +92,6 @@ a {
   margin-bottom: 10px;
   list-style: none;
   // background-color: $primary-color;
-  color: black;
 
   li {
     display: inline;
@@ -134,6 +133,32 @@ code {
 body.header-not-at-top {
   .uplink {
     bottom: $large-spacing;
+  }
+}
+
+#color-theme {
+  @each $theme in $color-themes {
+    &.color-#{nth($theme, 1)} {
+      color: nth($theme,3);
+
+      a {
+        background-color: nth($theme,4);
+
+        &:hover {
+          background-color: transparent;
+          color: nth($theme,4)
+        }
+      }
+
+      .navbar a {
+        background-color: transparent;
+        color: nth($theme,4);
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
   }
 }
 

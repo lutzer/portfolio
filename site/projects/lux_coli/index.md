@@ -11,7 +11,7 @@ Lux Coli is an interactive kinetic light installation, which reacts on the prese
 
 <span class="more"></span>
 
-{% image "render.jpg", "Render of Installation", 1500 %}
+{% image "render.jpg", "Render of Installation", image-width %}
 
 This project is currently work in progress.
 

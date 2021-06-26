@@ -2,48 +2,68 @@
 layout: base-layout.njk
 ---
 <div class="content project-list-page">
-  <div class="fixed-navbar">
-    {% include "navbar.njk" %}
+  <div id="color-theme">
+    <div class="fixed-navbar">
+      {% include "navbar.njk" %}
+    </div>
+    {# <h1>Projects</h1> #}
+    <div id="project-list">
+      {%- for project in collections.project -%}
+        <div class="project-list-item" data-color="{{ project.data.color }}">
+          <div class="center">
+            <h2>{{ project.data.title }}</h2>
+            {% if project.data.thumbnail %}
+              {% image project.fileSlug+"/"+project.data.thumbnail, project.data.title, 1024 %}
+            {% else %}
+              <div class="placeholder"><p>Nothing to see</p></div>
+            {% endif %}
+            <p>
+              {{ project.templateContent | abstract | safe }}
+            </p>
+            <a href="{{ project.url }}">read more</a> 
+            </div>
+        </div>
+      {%- endfor -%}
+      <div id="header"></div>
+      <div id="footer"><p>&#x2193;</p></div>
+    </div>
   </div>
-  {# <h1>Projects</h1> #}
-  <div id="project-list">
-    {%- for project in collections.project -%}
-      <div class="project-list-item" data-color="{{ project.data.color }}">
-        <div class="center">
-          <h2>{{ project.data.title }}</h2>
-          {% if project.data.thumbnail %}
-            {% image project.fileSlug+"/"+project.data.thumbnail, project.data.title, 1024 %}
-          {% else %}
-            <div class="placeholder"><p>Nothing to see</p></div>
-          {% endif %}
-          <p>
-            {{ project.templateContent | abstract | safe }}
-          </p>
-          <a href="{{ project.url }}">read more</a> 
-          </div>
-      </div>
-    {%- endfor -%}
-  </div>
-  {% include "uplink.njk" %}
 </div>
 
 <script>
   window.addEventListener("load", function() {
+    const themeElement = document.getElementById("color-theme")
     const projectList = document.getElementById("project-list")
+    // compute scroll positions of elements
     const projectItems = Array.from(document.getElementsByClassName("project-list-item"))
       .map((item) => {
         return { 
-          scrollPosition: item.offsetTop - projectList.offsetHeight/2,
+          scrollLower: item.offsetTop - projectList.offsetHeight/2,
+          scrollUpper: item.offsetTop + projectList.offsetHeight/2,
           color: item.getAttribute("data-color")
         }
       })
+    const footer = document.getElementById("footer")
+
+    function runChangeAnimation() {
+      const header = document.getElementById("header")
+      var newheader = header.cloneNode(true);
+      header.parentNode.replaceChild(newheader, header);
+    }
 
     function changeTheme() {
+      // hide footer
+      footer.className = projectList.scrollTop > projectList.offsetHeight/2 ? "hidden" : ""
+      
+      // change background depeneding on visible item
       for (const item of projectItems) {
-        if (projectList.scrollTop > item.scrollPosition) {
-          projectList.className = "color-"+item.color
-        } else {
-          break
+        if (projectList.scrollTop > item.scrollLower 
+          && projectList.scrollTop < item.scrollUpper) {
+          if (themeElement.className != "color-"+item.color) {
+            themeElement.className = "color-"+item.color
+            runChangeAnimation()
+          }
+          break;
         }
       }
     }
