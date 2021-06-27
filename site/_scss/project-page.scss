@@ -5,7 +5,7 @@
 
   @each $theme in $color-themes {
     &.color-#{nth($theme, 1)} {
-        background-color: nth($theme, 2);
+      background-color: nth($theme, 2);
     }
   }
 

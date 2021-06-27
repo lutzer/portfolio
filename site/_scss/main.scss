@@ -27,10 +27,10 @@ html, body {
   height:100%;
   padding:0;
   margin:0;
+  scroll-behavior: smooth;
 }
 
 body {
-  scroll-behavior: smooth;
   font-family: $font1;
   line-height: 1.5em;
   letter-spacing: 0.03em;

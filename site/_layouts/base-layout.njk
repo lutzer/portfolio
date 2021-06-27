@@ -17,14 +17,9 @@ bodyClass: false
 </html>
 
 <script>
-  { 
+  {
     const SCROLL_OFFSET = 200
-
-    const scrollToTop = function(e) {
-      window.scrollTo({ behavior: 'smooth', top: 0 })
-      e.preventDefault()
-    }
-
+    
     window.addEventListener("load", function() {
         let elem = window.location.hash && document.querySelector(window.location.hash);
         if (elem) {

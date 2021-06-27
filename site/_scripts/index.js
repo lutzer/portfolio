@@ -1,5 +1,10 @@
 // const rxjs = require('rxjs')
 
+const scrollToTop = function(e) {
+  window.scrollTo({ behavior: 'smooth', top: 0 })
+  e.preventDefault()
+}
+
 const debounce = function(func, wait = 100) {
   let timeout;
   return function(...args) {
@@ -115,4 +120,4 @@ class SnapScrollContainer extends EventTarget {
   }
 }
 
-module.exports = { debounce, throttle, SnapScrollContainer }
+module.exports = { debounce, throttle, SnapScrollContainer, scrollToTop }
