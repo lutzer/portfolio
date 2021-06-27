@@ -22,17 +22,18 @@
   font-weight: bold;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body, html {
-  font-family: $font1;
-  line-height: 1.5em;
-  letter-spacing: 0.03em;
+html, body {
+  width:100%;
   height:100%;
   padding:0;
   margin:0;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: $font1;
+  line-height: 1.5em;
+  letter-spacing: 0.03em;
 }
 
 h1,h2 {

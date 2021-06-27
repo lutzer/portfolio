@@ -1,5 +1,6 @@
 ---
 title: Lutz Reiter
+bodyClass: false
 ---
 <!doctype html>
 <html lang="en">
@@ -7,34 +8,36 @@ title: Lutz Reiter
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    {% include "scripts.njk" %}
+    <link rel="stylesheet" href="/assets/styles.css">
   </head>
-  <body>
+  <body {% if bodyClass %} class="{{ bodyClass }}" {% endif %}>
+    <script src="/assets/bundle.js"></script>
     {{ content | safe }}
   </body>
 </html>
 
 <script>
-  const SCROLL_OFFSET = 200
+  { 
+    const SCROLL_OFFSET = 200
 
-  const scrollToTop = function(e) {
-    window.scrollTo({ behavior: 'smooth', top: 0 })
-    e.preventDefault()
-  }
-
-  window.addEventListener("load", function() {
-      let elem = window.location.hash && document.querySelector(window.location.hash);
-      if (elem) {
-        elem.scrollIntoView();
-      }
-  })
-
-  document.addEventListener('scroll', throttle(function() {
-    if (window.scrollY > SCROLL_OFFSET) {
-      document.body.classList.add("header-not-at-top");
-    } else {
-      document.body.classList.remove("header-not-at-top");
+    const scrollToTop = function(e) {
+      window.scrollTo({ behavior: 'smooth', top: 0 })
+      e.preventDefault()
     }
-  }, 250))
+
+    window.addEventListener("load", function() {
+        let elem = window.location.hash && document.querySelector(window.location.hash);
+        if (elem) {
+          elem.scrollIntoView();
+        }
+    })
+
+    document.addEventListener('scroll', Bundle.throttle(function() {
+      if (window.scrollY > SCROLL_OFFSET) {
+        document.body.classList.add("header-not-at-top");
+      } else {
+        document.body.classList.remove("header-not-at-top");
+      }
+    }, 250))
+  }
 </script>

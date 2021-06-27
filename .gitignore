@@ -1,3 +1,5 @@
 node_modules
 dist
-site/css
+
+site/assets/styles.css*
+site/assets/bundle.js*

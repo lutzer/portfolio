@@ -1,0 +1,82 @@
+---
+layout: base-layout.njk
+---
+<div class="content project-list-page">
+  <div id="color-theme">
+    <div class="fixed-navbar">
+      {% include "navbar.njk" %}
+    </div>
+    {# <h1>Projects</h1> #}
+    <div id="project-list">
+      {%- for project in collections.project | reverse -%}
+        <div id="{{project.fileSlug}}" class="project-list-item" data-color="{{ project.data.color }}">
+          <div class="center">
+            <h2>{{ project.data.title | safe }}</h2>
+            {% if project.data.thumbnail %}
+              {% image project.fileSlug+"/"+project.data.thumbnail, project.data.title, 1024 %}
+            {% else %}
+              <div class="placeholder"><p>Nothing to see</p></div>
+            {% endif %}
+            <p>
+              {{ project.templateContent | abstract | safe }}
+            </p>
+            <a href="{{ project.url }}">read more</a> 
+            </div>
+        </div>
+      {%- endfor -%}
+      <div id="header"></div>
+      <div id="footer"><p>&#x2193;</p></div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+  function computeScrollBounds(projectList) {
+    
+    // compute scroll positions of elements
+    const projectItems = Array.from(document.getElementsByClassName("project-list-item"))
+      .map((item) => {
+        return { 
+          scrollLower: item.offsetTop - projectList.offsetHeight/2,
+          scrollUpper: item.offsetTop + projectList.offsetHeight/2,
+          color: item.getAttribute("data-color")
+        }
+      })
+    const footer = document.getElementById("footer")
+    return projectItems
+  }
+
+  window.addEventListener("load", function() {
+    const themeElement = document.getElementById("color-theme")
+    const projectList = document.getElementById("project-list")
+
+    const projectItems = computeScrollBounds(projectList)
+
+    function startChangeHeaderAnimation() {
+      const header = document.getElementById("header")
+      var newheader = header.cloneNode(true);
+      header.parentNode.replaceChild(newheader, header);
+    }
+
+    function changeTheme() {
+      // hide footer
+      footer.className = projectList.scrollTop > projectList.offsetHeight/2 ? "hidden" : ""
+      
+      // change background depeneding on visible item
+      for (const item of projectItems) {
+        if (projectList.scrollTop > item.scrollLower 
+          && projectList.scrollTop < item.scrollUpper) {
+          if (themeElement.className != "color-"+item.color) {
+            themeElement.className = "color-"+item.color
+            startChangeHeaderAnimation()
+          }
+          break;
+        }
+      }
+    }
+
+    projectList.addEventListener("scroll", throttle(changeTheme, 250))
+    changeTheme()
+  })
+</script>

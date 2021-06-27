@@ -80,7 +80,7 @@
     left: 0;
     right: 0;
     overflow-x: scroll;
-    padding: 0 $outer-margin;
+    padding: $outer-margin;
     transition: color $theme-transition-time, background-color $theme-transition-time;
     z-index: 1;
 

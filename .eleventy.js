@@ -1,5 +1,5 @@
-const shorthands = require('./11ty-shorthands')
-const filters = require('./11ty-filters')
+const shorthands = require('./11ty_shorthands')
+const filters = require('./11ty_filters')
 
 const config = {
   OUTPUT_DIR : "dist",

@@ -1,12 +1,12 @@
 ---
 layout: base-layout.njk
+bodyClass: project-list-page
 ---
 <div class="content project-list-page">
   <div id="color-theme">
     <div class="fixed-navbar">
       {% include "navbar.njk" %}
     </div>
-    {# <h1>Projects</h1> #}
     <div id="project-list">
       {%- for project in collections.project | reverse -%}
         <div id="{{project.fileSlug}}" class="project-list-item" data-color="{{ project.data.color }}">
@@ -24,50 +24,39 @@ layout: base-layout.njk
             </div>
         </div>
       {%- endfor -%}
-      <div id="header"></div>
-      <div id="footer"><p>&#x2193;</p></div>
     </div>
+    <div id="header"></div>
+    <div id="footer"><p>&#x2193;</p></div>
   </div>
 </div>
 
 <script>
-  window.addEventListener("load", function() {
-    const themeElement = document.getElementById("color-theme")
-    const projectList = document.getElementById("project-list")
-    // compute scroll positions of elements
-    const projectItems = Array.from(document.getElementsByClassName("project-list-item"))
-      .map((item) => {
-        return { 
-          scrollLower: item.offsetTop - projectList.offsetHeight/2,
-          scrollUpper: item.offsetTop + projectList.offsetHeight/2,
-          color: item.getAttribute("data-color")
-        }
-      })
-    const footer = document.getElementById("footer")
+  {
+    
+    const snapper = new Bundle.SnapScrollContainer({ containerId: 'project-list', itemClass: 'project-list-item'})
 
-    function runChangeAnimation() {
+    snapper.container.addEventListener("scroll", Bundle.throttle(() => {
+      changeColors()
+    }))
+
+    window.addEventListener("load",() => {
+      changeColors()
+    })
+
+    const themeElement = document.getElementById("color-theme")
+    function changeColors() {
+      // get color
+      const item = snapper.calculateClosestItem()
+      const color = item.dataset.color
+
+      if (themeElement.className == "color-"+color)
+        return
+
+      // set color css class
       const header = document.getElementById("header")
       var newheader = header.cloneNode(true);
       header.parentNode.replaceChild(newheader, header);
+      themeElement.className = "color-"+color
     }
-
-    function changeTheme() {
-      // hide footer
-      footer.className = projectList.scrollTop > projectList.offsetHeight/2 ? "hidden" : ""
-      
-      // change background depeneding on visible item
-      for (const item of projectItems) {
-        if (projectList.scrollTop > item.scrollLower 
-          && projectList.scrollTop < item.scrollUpper) {
-          if (themeElement.className != "color-"+item.color) {
-            themeElement.className = "color-"+item.color
-            runChangeAnimation()
-          }
-          break;
-        }
-      }
-    }
-    changeTheme()
-    projectList.addEventListener("scroll", throttle(changeTheme, 250))
-  })
+  }
 </script>
