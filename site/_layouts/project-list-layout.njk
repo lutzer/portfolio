@@ -32,7 +32,7 @@ bodyClass: project-list-page
 
 <script>
   {
-    const snapper = new Bundle.SnapScrollContainer({ containerId: 'project-list', itemClass: 'project-list-item'})
+    const snapper = new Bundle.SnapScrollContainer({ containerId: 'project-list', itemClass: 'project-list-item', scrollTimeout: 100})
 
     const footer = document.getElementById("footer")
     snapper.container.addEventListener("scroll", Bundle.throttle(() => {

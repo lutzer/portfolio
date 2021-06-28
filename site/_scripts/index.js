@@ -36,7 +36,7 @@ class SnapEvent extends Event {
 
 class SnapScrollContainer extends EventTarget {
 
-  constructor({ containerId, itemClass }) {
+  constructor({ containerId, itemClass, scrollTimeout = 100 }) {
     super()
 
     this.container = document.getElementById(containerId)
@@ -70,14 +70,14 @@ class SnapScrollContainer extends EventTarget {
     })
     window.addEventListener("touchend", () => {
       this.pointerdown = false
+      this.snap()
     })
 
     // react to scroll event
     this.container.addEventListener('scroll', debounce(() => {
       this.needSnapping = true
-      if (!this.pointerdown)
-        this.snap()
-    },100))
+      this.snap()
+    },scrollTimeout))
   } 
 
   _computeScrollBounds() {
@@ -106,7 +106,7 @@ class SnapScrollContainer extends EventTarget {
   }
 
   snap(update = true) {
-    if (!this.needSnapping)
+    if (!this.needSnapping || this.pointerdown)
       return
 
     if (update || !this.currentItem) {
