@@ -70,7 +70,6 @@ class SnapScrollContainer extends EventTarget {
     })
     window.addEventListener("touchend", () => {
       this.pointerdown = false
-      this.snap()
     })
 
     // react to scroll event
@@ -78,19 +77,22 @@ class SnapScrollContainer extends EventTarget {
       this.needSnapping = true
       if (!this.pointerdown)
         this.snap()
-    },50))
+    },100))
   } 
 
   _computeScrollBounds() {
     // compute scroll positions of elements
-    this.itemBounds = this.containerItems.map((item) => {
-      return { 
-        scrollLower: item.offsetTop - this.container.offsetHeight/2,
-        scrollUpper: item.offsetTop + this.container.offsetHeight/2,
+    this.itemBounds = this.containerItems.reduce((acc, item) => {
+      const newBound = { 
+        scrollLower: acc.maxBound,
+        scrollUpper: item.offsetTop + item.offsetHeight/2,
         position: item.offsetTop,
         item: item
       }
-    })
+      acc.bounds.push(newBound)
+      acc.maxBound = newBound.scrollUpper
+      return acc
+    },{ maxBound: 0, bounds: [] }).bounds
   }
 
   calculateClosestItem() {
@@ -100,6 +102,7 @@ class SnapScrollContainer extends EventTarget {
         return bound.item
       }
     }
+    return this.container.scrollTop < 0 ? this.containerItems[0] : this.containerItems[this.containerItems.length-1]
   }
 
   snap(update = true) {
