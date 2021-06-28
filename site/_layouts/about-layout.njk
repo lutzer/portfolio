@@ -11,16 +11,18 @@ layout: base-layout.njk
 
 
 <script>
-  function decodeMailAddress() {
-      var string = "yhgm@yh-er.qr".replace(/[a-zA-Z]/g, function(c) {
-          return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);
-      });
-      return string;
-  }
-  window.addEventListener("load", function() {
-    const mailLink = document.getElementById("email-address")
+  {
+    function decodeMailAddress() {
+        var string = "yhgm@yh-er.qr".replace(/[a-zA-Z]/g, function(c) {
+            return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);
+        });
+        return string;
+    }
+    window.addEventListener("load", function() {
+      const mailLink = document.getElementById("email-address")
 
-    mailLink.innerHTML = decodeMailAddress()
-    mailLink.setAttribute("href", "mailto:"+decodeMailAddress())
-  })
+      mailLink.innerHTML = decodeMailAddress()
+      mailLink.setAttribute("href", "mailto:"+decodeMailAddress())
+    })
+  }
 </script>

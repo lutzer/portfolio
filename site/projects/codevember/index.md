@@ -1,5 +1,5 @@
 ---
-title: Codevember
+title: Codevember Sketches
 tags: project
 thumbnail: day01.png
 date: 2020-01-31

@@ -2,6 +2,7 @@
 
 .project-page {
   min-height: 100%;
+  overflow-x: hidden;
 
   @each $theme in $color-themes {
     &.color-#{nth($theme, 1)} {
