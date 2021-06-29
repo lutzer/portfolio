@@ -1,4 +1,11 @@
-// const rxjs = require('rxjs')
+const { fromEvent } = require('rxjs/observable/fromEvent')
+const { merge } = require('rxjs/observable/merge')
+const { of : rxOf } = require('rxjs/observable/of')
+const { throttleTime } = require('rxjs/operators/throttleTime')
+const { debounceTime } = require('rxjs/operators/debounceTime')
+const { takeUntil } = require('rxjs/operators/takeUntil')
+const { switchMap } = require('rxjs/operators/switchMap')
+const { mapTo } = require('rxjs/operators/mapTo')
 
 const scrollToTop = function(e) {
   window.scrollTo({ behavior: 'smooth', top: 0 })
@@ -34,9 +41,15 @@ class SnapEvent extends Event {
   }
 }
 
+// function logTime(...args) {
+//   this.lastCalled = this.lastCalled || Date.now()
+//   console.log(Date.now() - this.lastCalled, ...args)
+//   this.lastCalled = Date.now()
+// }
+
 class SnapScrollContainer extends EventTarget {
 
-  constructor({ containerId, itemClass, scrollTimeout = 100 }) {
+  constructor({ containerId, itemClass, scrollTimeout = 250 }) {
     super()
 
     this.container = document.getElementById(containerId)
@@ -45,39 +58,30 @@ class SnapScrollContainer extends EventTarget {
 
     this.currentItem = null
 
-    this.pointerdown = false
-    this.needSnapping = false
-
     // recalculate bounds
     window.addEventListener('load', () => {
       this._computeScrollBounds()
-      this.needSnapping = true
-      this.snap(true)
+      this.snap()
     })
     window.addEventListener('resize', debounce(() => {
       this._computeScrollBounds()
-      this.needSnapping = true
-      this.snap(false)
+      this.snap()
     }))
 
-    // listen to pointer events
-    window.addEventListener("pointerdown", () => {
-      this.pointerdown = true
-    })
-    window.addEventListener("pointerup", () => {
-      this.pointerdown = false
-      this.snap()
-    })
-    window.addEventListener("touchend", () => {
-      this.pointerdown = false
-      this.snap()
-    })
+    const $pointerdown = merge(fromEvent(window, 'touchstart'), fromEvent(window, 'pointerdown')).pipe(throttleTime(10), mapTo("down"))
+    const $pointerup = merge(fromEvent(window, 'touchend'), fromEvent(window, 'pointerup')).pipe(throttleTime(10), mapTo("up"))
+    const $scrollChange = fromEvent(this.container, 'scroll').pipe(mapTo("scroll"))
 
-    // react to scroll event
-    this.container.addEventListener('scroll', debounce(() => {
-      this.needSnapping = true
-      this.snap()
-    },scrollTimeout))
+    // listen to scroll events, unsubscribe on pointerdown
+    merge(rxOf("start"), $pointerup)
+      .pipe(
+        switchMap( (e) => merge(rxOf(e), $scrollChange).pipe(takeUntil($pointerdown))),
+        debounceTime(scrollTimeout),
+        throttleTime(1000)
+      )
+      .subscribe(() => {
+        this.snap()
+      })
   } 
 
   _computeScrollBounds() {
@@ -105,21 +109,14 @@ class SnapScrollContainer extends EventTarget {
     return this.container.scrollTop < 0 ? this.containerItems[0] : this.containerItems[this.containerItems.length-1]
   }
 
-  snap(update = true) {
-    if (!this.needSnapping || this.pointerdown)
-      return
-
-    if (update || !this.currentItem) {
-      this.currentItem = this.calculateClosestItem()
-    }
+  snap(scrollEvent) {
+    this.currentItem = this.calculateClosestItem()
 
     this.dispatchEvent(new SnapEvent('snapped', this.currentItem))
     this.container.scrollTo({
       top: this.currentItem.offsetTop,
       behavior: 'smooth'
     });
-
-    this.needSnapping = false
   }
 }
 
