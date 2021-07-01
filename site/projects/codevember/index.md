@@ -20,6 +20,7 @@ The sketches are made using canvas2d and threejs. All sketches can be found unde
 {% image "day01.png", "Sketch", null, "image" %}
 {% image "day2.png", "Sketch", null, "image" %}
 {% image "day3.png", "Sketch", null, "image" %}
+{% image "day4.png", "Sketch", null, "image" %}
 {% image "day5.png", "Sketch", null, "image" %}
 {% image "day7.png", "Sketch", null, "image" %}
 {% image "day8-1.png", "Sketch", null, "image" %}
@@ -28,4 +29,4 @@ The sketches are made using canvas2d and threejs. All sketches can be found unde
 {% image "day27.png", "Sketch", null, "image" %}
 </div>
 
-*These sketches are works in progress. Some of these sketches were exhibited in 2021 during 48h Neukoelln.*
+*The collection of sketches is constantly growing. Some of these sketches were exhibited in 2021 during 48h Neukölln.*

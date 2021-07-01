@@ -55,7 +55,7 @@ h2 {
   // padding: 10px 0;
 }
 
-a {
+a:not(.no-decoration) {
   background-color: $primary-color;
   color: white;
   padding: 0.3ex 0.3em;
@@ -74,6 +74,10 @@ a {
     visibility: hidden;
     height: 0;
   }
+}
+
+p {
+  overflow-wrap: break-word;
 }
 
 .content {
@@ -141,7 +145,7 @@ body.header-not-at-top {
     &.color-#{nth($theme, 1)} {
       color: nth($theme,3);
 
-      a {
+      a:not(.no-decoration) {
         background-color: nth($theme,4);
 
         &:hover {
@@ -150,7 +154,7 @@ body.header-not-at-top {
         }
       }
 
-      .navbar a {
+      .navbar a:not(.no-decoration) {
         background-color: transparent;
         color: nth($theme,4);
 

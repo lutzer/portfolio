@@ -12,11 +12,13 @@ bodyClass: project-list-page
         <div id="{{project.fileSlug}}" class="project-list-item" data-color="{{ project.data.color }}">
           <div class="center">
             <h2>{{ project.data.title | safe }}</h2>
-            {% if project.data.thumbnail %}
-              {% image project.fileSlug+"/"+project.data.thumbnail, project.data.title %}
-            {% else %}
-              <div class="placeholder"><p>Nothing to see</p></div>
-            {% endif %}
+            <a href="{{ project.url }}" class="no-decoration">
+              {% if project.data.thumbnail %}
+                {% image project.fileSlug+"/"+project.data.thumbnail, project.data.title %}
+              {% else %}
+                <div class="placeholder"><p>Nothing to see</p></div>
+              {% endif %}
+            </a>
             <p>
               {{ project.templateContent | abstract | striptags(true) }}
             </p>

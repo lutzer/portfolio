@@ -22,7 +22,7 @@ Lux Coli mimics the behaviour of a living organism, that is influenced by the sp
 {% image "sim4.jpg", "Render of Installation", null, "image" %}
 </div>
 
-Interactive simulation: [http://projects.lu-re.de/lux-coli/]()
+We created a small, initial interactive [simulation](http://projects.lu-re.de/lux-coli/).
 
 Each arm contains a custom made pcb, which controls the leds and a stepper motor that rotates the arms in an angle of ~300 degrees. People around the installation are sensed by ultrasonic proximity sensors, built into the base of every arm (weight: ~1kg per arm). The Led Strips are housed within sealed acrylic tubes to protect them from humidity. Since the communication between the pieces is based on wireless transceivers, there are only power cables required to connect the single elements. Each of the arms runs on 24V requiring a maximum current of 5A, which sums up to a peak current consumption of 2500W for the whole installation. The joints will be custom made and 3d printed with waterproof and temperature resistant PETG filament. The Choreography of the arms is calculated on a raspberry pi that collects the sensor data and creates movement and light patterns that are send wirelessly to the single arms.
 
