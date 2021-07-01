@@ -1,6 +1,6 @@
 ---
 layout: about-layout.njk
-title: Lutz Reiter - about
+title: about
 date: Last Modified
 ---
 

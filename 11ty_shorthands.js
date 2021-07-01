@@ -6,14 +6,14 @@ const _ = require("lodash")
 module.exports = function(eleventyConfig, config) {
 
   // generate images
-  async function imageShortcode(src, alt, sizes) {
-    if (!src)
-      return ""
+  async function imageShortcode(src, alt, sizes, divClass) {
 
     const imgPath = path.join(path.dirname(this.page.inputPath), src)
 
+    sizes = sizes ? sizes : [700, 1400, null]
+
     let metadata = await Image(imgPath, {
-      widths: _.isArray(sizes) ? sizes : [sizes],
+      widths: sizes,
       formats: ["png","jpg"],
       urlPath: "/assets/img/",
       outputDir: config.OUTPUT_DIR + "/assets/img/",
@@ -26,10 +26,11 @@ module.exports = function(eleventyConfig, config) {
       decoding: "async",
     }
 
-    return Image.generateHTML(metadata, imageAttributes)
+    const image = Image.generateHTML(metadata, imageAttributes)
+    return divClass ? `<div class="${divClass}">${image}</div>` : image
   }
 
-  // image shorthand
+  // image shorthand2
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode)
   eleventyConfig.addLiquidShortcode("image", imageShortcode)
   eleventyConfig.addJavaScriptFunction("image", imageShortcode)

@@ -6,4 +6,26 @@ date: 2020-01-31
 color: 2
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu molestie erat, vitae euismod massa. Phasellus imperdiet eleifend nisl, sed mollis eros tempor volutpat. Donec pretium, turpis ultrices gravida semper, nulla erat consequat turpis, eu pulvinar nisi eros vitae dui. Proin nec hendrerit lectus. Sed massa odio, congue et urna at, viverra pharetra eros. Aenean id neque eu ex imperdiet venenatis eget vel sapien. Vestibulum lobortis orci et neque ullamcorper molestie. Suspendisse potenti. Vivamus vel vulputate leo. Suspendisse tincidunt malesuada felis et sagittis. Aenean sollicitudin tellus mattis justo lobortis, sit amet ornare nunc egestas. Vivamus auctor aliquet augue, at varius ipsum. In [sed](/test) diam nisi.
+*These programatically Sketches is a growing collection of scripts that were created in the dark and rainy month of november. Similar to fast drawn graphical sketches, they were all created within a few hours. Instead of using a pencil, these works are created by code.*
+
+<span class="more"></span>
+
+<div class="iframe-with-asp" style="padding-bottom: 100%;">
+  <iframe src="https://lutzer.github.io/codevember19/day01-contrast-fullscreen.html" width="512" height="512"></iframe>
+</div>
+
+The sketches are made using canvas2d and threejs. All sketches can be found under [lutzer.github.io/codevember19/](https://lutzer.github.io/codevember19/).
+
+<div class="gallery">
+{% image "day01.png", "Sketch", null, "image" %}
+{% image "day2.png", "Sketch", null, "image" %}
+{% image "day3.png", "Sketch", null, "image" %}
+{% image "day5.png", "Sketch", null, "image" %}
+{% image "day7.png", "Sketch", null, "image" %}
+{% image "day8-1.png", "Sketch", null, "image" %}
+{% image "day8-2.png", "Sketch", null, "image" %}
+{% image "day8-4.png", "Sketch", null, "image" %}
+{% image "day27.png", "Sketch", null, "image" %}
+</div>
+
+*These sketches are works in progress. Some of these sketches were exhibited in 2021 during 48h Neukoelln.*

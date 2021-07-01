@@ -13,12 +13,12 @@ bodyClass: project-list-page
           <div class="center">
             <h2>{{ project.data.title | safe }}</h2>
             {% if project.data.thumbnail %}
-              {% image project.fileSlug+"/"+project.data.thumbnail, project.data.title, 1024 %}
+              {% image project.fileSlug+"/"+project.data.thumbnail, project.data.title %}
             {% else %}
               <div class="placeholder"><p>Nothing to see</p></div>
             {% endif %}
             <p>
-              {{ project.templateContent | abstract | safe }}
+              {{ project.templateContent | abstract | striptags(true) }}
             </p>
             <a href="{{ project.url }}">read more</a> 
             </div>

@@ -8,4 +8,32 @@ layout: base-layout.njk
     {{ content | safe }}
     <a href="../#{{ page.fileSlug }}">&#8592; Back</a>
   </div>
+  <div id="picture-overlay" onclick="onOverlayCloseClicked(event)">
+    <div id="picture-overlay-image"></div>
+    <div class="close"><a href="#" onclick="onOverlayCloseClicked(event)">Close</a></div>
+  </div>
 </div>
+
+<script>
+  const overlayElement = document.getElementById('picture-overlay')
+  const onOverlayCloseClicked = function(event) {
+    if (event.target.nodeName != "IMG") {
+      overlayElement.classList = ""
+      event.preventDefault()
+    }
+  }
+
+  {
+    window.addEventListener("load", () => {
+      const images = Array.from(document.getElementsByClassName('image'))
+      const overlayImgElement = document.getElementById('picture-overlay-image')
+      images.forEach( (ele) => {
+        ele.addEventListener('click', (event) => {
+          var pictureElement = event.target.cloneNode(true)
+          overlayImgElement.replaceChildren(...[pictureElement])
+          overlayElement.classList = "show"
+        })
+      })
+    })
+  }
+</script>

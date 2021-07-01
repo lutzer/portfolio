@@ -1,6 +1,6 @@
 ---
 layout: index-layout.njk
-title: Lutz Reiter - hej
+title: hej
 date: Last Modified
 ---
 

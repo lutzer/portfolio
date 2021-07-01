@@ -15,7 +15,7 @@ module.exports = function(eleventyConfig, config) {
       },[])
   });
 
-  // extract abstract from project markdown
+  //extract abstract from project markdown
   eleventyConfig.addFilter("abstract", (str) => {
     let index = str.search("<span class=\"more\"></span>")
     return index > 0 ? str.substring(0,index) : str.substring(0,256) + " ..."
