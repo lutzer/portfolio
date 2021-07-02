@@ -15,24 +15,25 @@ layout: base-layout.njk
 </div>
 
 <script>
+  const overlayImgElement = document.getElementById('picture-overlay-image')
   const overlayElement = document.getElementById('picture-overlay')
   const onOverlayCloseClicked = function(event) {
     if (event.target.nodeName != "IMG") {
       overlayElement.classList = ""
+      overlayImgElement.replaceChildren(...[])
       event.preventDefault()
     }
   }
 
   {
-    window.addEventListener("load", () => {
-      const images = Array.from(document.getElementsByClassName('image'))
-      const overlayImgElement = document.getElementById('picture-overlay-image')
-      images.forEach( (ele) => {
-        ele.addEventListener('click', (event) => {
-          var pictureElement = event.target.cloneNode(true)
-          overlayImgElement.replaceChildren(...[pictureElement])
-          overlayElement.classList = "show"
-        })
+    const images = Array.from(document.getElementsByClassName('image'))
+    images.forEach( (ele) => {
+      ele.addEventListener('click', (event) => {
+        if (event.target.className != 'image')
+          return false
+        var pictureElement = event.target.cloneNode(true)
+        overlayImgElement.replaceChildren(...[pictureElement])
+        overlayElement.classList = "show"
       })
     })
   }

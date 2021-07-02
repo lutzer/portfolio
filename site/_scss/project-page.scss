@@ -39,6 +39,7 @@
       img {
         width: 100%;
         height: auto;
+        pointer-events: none;
       }
 
     }
@@ -83,7 +84,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: color.change(black, $alpha: 0.8);
+    background-color: color.change(black, $alpha: 0.85);
     display: flex;
     justify-content: center;
     align-items: center;
