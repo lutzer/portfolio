@@ -65,7 +65,7 @@ class SnapScrollContainer extends EventTarget {
     })
     window.addEventListener('resize', debounce(() => {
       this._computeScrollBounds()
-      this.snap(false)
+      this.snap()
     }))
 
     const $pointerdown = merge(fromEvent(window, 'touchstart'), fromEvent(window, 'pointerdown')).pipe(throttleTime(10), mapTo("down"))
@@ -109,9 +109,7 @@ class SnapScrollContainer extends EventTarget {
     return this.container.scrollTop < 0 ? this.containerItems[0] : this.containerItems[this.containerItems.length-1]
   }
 
-  snap(update = true) {
-
-    if (update || !this.currentItem)
+  snap() {
     this.currentItem = this.calculateClosestItem()
 
     this.dispatchEvent(new SnapEvent('snapped', this.currentItem))
