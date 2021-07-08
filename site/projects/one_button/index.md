@@ -1,7 +1,7 @@
 ---
 title: One Button
 tags: project
-thumbnail: thumb.jpeg
+thumbnail: thumb2.png
 date: 2019-05-01
 color: 4
 ---
