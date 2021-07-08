@@ -20,4 +20,10 @@ module.exports = function(eleventyConfig, config) {
     let index = str.search("<span class=\"more\"></span>")
     return index > 0 ? str.substring(0,index) : str.substring(0,256) + " ..."
   })
+
+  eleventyConfig.addFilter("decodeHtmlChars", (str) => {
+    return str.replace(/&#(\d+);/g, function(match, dec) {
+      return String.fromCharCode(dec);
+    });
+  })
 }

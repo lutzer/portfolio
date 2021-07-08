@@ -7,7 +7,7 @@ bodyClass: false
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lutz Reiter - {{ title }}</title>
+    <title>Lutz Reiter - {{ title | decodeHtmlChars }}</title>
     <link rel="stylesheet" href="/assets/styles.css">
   </head>
   <body {% if bodyClass %} class="{{ bodyClass }}" {% endif %}>

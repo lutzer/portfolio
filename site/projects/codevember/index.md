@@ -1,7 +1,7 @@
 ---
 title: Codevember Sketches
 tags: project
-thumbnail: day01.png
+thumbnail: day27.png
 date: 2020-01-31
 color: 2
 ---

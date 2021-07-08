@@ -36,4 +36,4 @@ Each arm contains a custom made pcb, which controls the leds and a stepper motor
 </div>
 
 
-*This project was created in collaboration with Nuno de la Serna. It was submitted to the Festival of Lights Amsterdam in 2019 and is still work in progress.*
+*This project was created in collaboration with Nuno de la Serna. It was submitted to the Festival of Lights Amsterdam in 2019 and is still beeing developed.*
