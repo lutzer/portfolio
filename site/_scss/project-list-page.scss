@@ -41,8 +41,8 @@
     height: 80px;
     z-index: 2;
     opacity: 1;
-    // background-color: blue;
     animation: fade-transition $theme-transition-time;
+    pointer-events: none;
 
     @keyframes fade-transition {
       0%   {opacity: 0}

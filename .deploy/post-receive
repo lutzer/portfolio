@@ -9,7 +9,9 @@ do
  then
   echo "Ref $ref received. Deploying ${BRANCH} branch to production..."
   git --work-tree=$TARGET --git-dir=$GIT_DIR checkout -f $BRANCH
+  echo "Installing dependencies..."
   cd $TARGET
+  echo "Building site..."
   npm install && npm build
  else
 

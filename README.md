@@ -2,6 +2,10 @@
 
 html generator for lu-re.de
 
+## Prerequisites
+
+* install node, npm and npx
+
 ## Deployment
 
 ### Local
