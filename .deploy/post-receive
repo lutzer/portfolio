@@ -16,6 +16,6 @@ do
  else
 
   # perform more tasks like migrate and run test, the output of these commands >
-echo "Ref $ref received. Doing nothing: only the ${BRANCH} branch may be deploy>
+echo "Ref $ref received. Doing nothing: only the ${BRANCH} branch may be deploy>"
  fi
 done
