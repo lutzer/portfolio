@@ -13,7 +13,7 @@ do
   git --work-tree=$CHECKOUT_DIR --git-dir=$GIT_DIR checkout -f $BRANCH
   echo "Installing dependencies & Building site ..."
   cd $CHECKOUT_DIR
-  npm install && npm build
+  npm install && npm run build
   echo "Copy files to production directory ..."
   cp -r dist/. $WWW_DIR
  else
