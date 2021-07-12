@@ -6,7 +6,7 @@ layout: base-layout.njk
     {% include "navbar.njk" %}
     <h1>{{ title | safe }}</h1>
     {{ content | safe }}
-    <a href="../#{{ page.fileSlug }}">&#8592; Back</a>
+    <a class="back-button" href="../#{{ page.fileSlug }}">&#8592; Back</a>
   </div>
   <div id="picture-overlay" onclick="onOverlayCloseClicked(event)">
     <div id="picture-overlay-image"></div>

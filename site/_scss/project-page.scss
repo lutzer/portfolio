@@ -5,6 +5,7 @@
 .project-page {
   min-height: 100%;
   overflow-x: hidden;
+  margin-bottom: 50px;
 
   @each $theme in $color-themes {
     &.color-#{nth($theme, 1)} {
@@ -78,6 +79,10 @@
       max-width: 100%;
       max-height: 500px;
     }
+  }
+
+  .back-button {
+    line-height: 50px;
   }
 
   #picture-overlay {
