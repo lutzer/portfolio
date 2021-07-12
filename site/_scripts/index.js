@@ -62,26 +62,28 @@ class SnapScrollContainer extends EventTarget {
     window.addEventListener('load', () => {
       this._computeScrollBounds()
       this.snap()
+
+      // setup pointer events
+      const $pointerdown = merge(fromEvent(window, 'touchstart'), fromEvent(window, 'pointerdown')).pipe(throttleTime(10), mapTo("down"))
+      const $pointerup = merge(fromEvent(window, 'touchend'), fromEvent(window, 'pointerup')).pipe(throttleTime(10), mapTo("up"))
+      const $scrollChange = fromEvent(this.container, 'scroll').pipe(mapTo("scroll"))
+
+      // listen to scroll events, unsubscribe on pointerdown
+      merge(rxOf("start"), $pointerup)
+        .pipe(
+          switchMap( (e) => merge(rxOf(e), $scrollChange).pipe(takeUntil($pointerdown))),
+          debounceTime(scrollTimeout),
+          throttleTime(400)
+        )
+        .subscribe(() => {
+          this.snap()
+        })
+
     })
     window.addEventListener('resize', debounce(() => {
       this._computeScrollBounds()
       this.snap()
     }))
-
-    const $pointerdown = merge(fromEvent(window, 'touchstart'), fromEvent(window, 'pointerdown')).pipe(throttleTime(10), mapTo("down"))
-    const $pointerup = merge(fromEvent(window, 'touchend'), fromEvent(window, 'pointerup')).pipe(throttleTime(10), mapTo("up"))
-    const $scrollChange = fromEvent(this.container, 'scroll').pipe(mapTo("scroll"))
-
-    // listen to scroll events, unsubscribe on pointerdown
-    merge(rxOf("start"), $pointerup)
-      .pipe(
-        switchMap( (e) => merge(rxOf(e), $scrollChange).pipe(takeUntil($pointerdown))),
-        debounceTime(scrollTimeout),
-        throttleTime(1000)
-      )
-      .subscribe(() => {
-        this.snap()
-      })
   } 
 
   _computeScrollBounds() {

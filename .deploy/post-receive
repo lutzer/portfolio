@@ -14,6 +14,8 @@ do
   echo "Installing dependencies & Building site ..."
   cd $CHECKOUT_DIR
   npm install && npm run build
+  echo "Clear production directory ..."
+  rm -rf $WWW_DIR/.
   echo "Copy files to production directory ..."
   cp -r dist/. $WWW_DIR
  else
