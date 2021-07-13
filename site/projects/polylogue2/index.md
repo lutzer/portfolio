@@ -25,7 +25,6 @@ Upon visiting the Pavilion, people encounter three wall-mounted boxes and a keyb
 {% image, "pl2-6.jpeg", "Visitors interacting with the installation", null, "image" %}
 {% image, "pl2-7.jpeg", "Visitors interacting with the installation", null, "image" %}
 {% image, "pl2-8.jpeg", "Visitors interacting with the installation", null, "image" %}
-{% image, "pl2-9.jpeg", "Visitors interacting with the installation", null, "image" %}
 </div>
 
 *Made in collaboration with Andreas Unteidig, Fabrizio Lamoncha, Blanca Cobreros-Dominguez at the Design Research Lab Berlin.*

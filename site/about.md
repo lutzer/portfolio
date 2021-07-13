@@ -6,7 +6,7 @@ date: Last Modified
 
 # About Me
 
-By [education](#education) I am an interaction designer, programmer and biologist. After finishing my bachelor in bioinformatics, I worked several years in the field of neurobiology and behavioural science. In 2011 I started studieng Interaction Design in Göteborg. In my masther thesis, I engaged with the topic of designing for social interactions in urban communities. I worked in several [jobs](#jobs) as a creative technologist, researcher, coder and ux designer as well as a freelancer in the fields of media arts, social- and interaction Design, automotive design and autonomous driving. Building hard- and software prototypes, interactive installations, web and mobile applications. A list of my [exhibitions & publications](#exhibitions) is compiled below.
+By [education](#education) I am an interaction designer, programmer and biologist. After finishing my bachelor in bioinformatics, I worked several years in the field of neurobiology and behavioural science. Later on, I studied Interaction Design in Göteborg. I worked in several [jobs](#jobs) as a creative technologist, researcher, coder and ux designer as well as a freelancer in the fields of media arts, urban design, social- and interaction design, automotive design and autonomous driving. I am building hard- and software prototypes, interactive installations, web and mobile applications. A list of my [exhibitions & publications](#exhibitions) is compiled below.
 
 Get in touch with me by writing to <a id="email-address" href="">lutz AT lu-re DOT de</a>.
 

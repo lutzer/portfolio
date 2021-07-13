@@ -16,7 +16,3 @@ If you want to learn more [about me](/about), listen to my music project [Ape Fi
 
 
 
-<!-- <span class="date">{% formatDate page.date %}</span> -->
-
-
-
