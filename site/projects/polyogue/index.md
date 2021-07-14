@@ -13,13 +13,11 @@ date: 2016-08-01
 {% image, "polylogue1.jpg", "Polylogue at Transmediale 2016", null, "image" %}
 {% image, "polylogue2.jpg", "Detailed View of the shredding Box", null, "image" %}
 
-One of the strings is actuated by human brainwaves, the other one by the mind of a rat. The listener is experiencing the subconscious activity of both minds joined together. But even though this seems to be a very unlike couple, both sleeping patterns sound surprisingly similar. During sleep, the brain’s activity is very dynamic. It goes through multiple episodes of changes, constantly switching between non-REM and REM episodes. Because the brain’s activity is very similar to the waking state it is also called paradoxical sleep. It is the state when dreaming occurs. Even though these episodes show very similar activity patterns among different species, duration and repetitions vary between species, but also between ages.
+Polylogue offers space for thoughts, questions, claims and nonsense to stand next to each other, to object, to relate: Depending on the time of contribution, messages are being printed above, under or next to each other and seemingly relate, though being fundamentally separated from one another through exactly this very simultaneousness.
 
 <div class="iframe-with-asp" style="padding-bottom: 56%;">
   <iframe src="https://player.vimeo.com/video/158835693" width="600" height="338" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 </div>
-
-Polylogue offers space for thoughts, questions, claims and nonsense to stand next to each other, to object, to relate: Depending on the time of contribution, messages are being printed above, under or next to each other and seemingly relate, though being fundamentally separated from one another through exactly this very simultaneousness.
 
 Polylogue offers a physical experience analog to apps like Snapchat and thus serves as a antithesis to the internet’s „eternal memory“, as the messages and their relationships only exist situational: commentaries that were up to date just minutes ago become obliterated after having had a run of approximately two meters. Unlike digital messages, which often travel for thousands of kilometers, multiple times around the globe, messages submitted to polylogue travel exactly 2m until reaching their final destination. How long it takes for a message to move across to the other box, where it will be shredded and destroyed is determined by the density of the conversation: The more and the faster visitors contribute to the feed, the more short-lived a single message becomes.
 

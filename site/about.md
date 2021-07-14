@@ -26,8 +26,8 @@ Get in touch with me by writing to <a id="email-address" href="">lutz AT lu-re D
 * # Speculum Artium | Trbovlje New Media Festival
   Interactive Installation *Polylogue pt. 2* exhibited at Speculum Artium, Slovenia (2019).
 
-* # Bongo Forest
-  Audio Visual Installation exhibited at Wilde Moehre Festival, Drebkau (2018).
+* # Wilde Moehre Festival
+  Audio Visual Installation *Bongo Forest* exhibited at Wilde Moehre Festival, Drebkau (2018).
 
 * # Republica
   Interactive Installation *Polyloge* exhibited at Republica, Berlin (2017).
@@ -68,17 +68,17 @@ Get in touch with me by writing to <a id="email-address" href="">lutz AT lu-re D
 * # The Hybrid Meeting Point - An urban infrastructure for interacting across boundaries of difference
   Andreas Unteidig, Bianca Herlo, Lutz Reiter (2015): Hybrid City 2015: Data to the People, Athens: URIAC, At Athens, Greece.
 
-* # Hybrid Meeting Point
-  Interactive Installation exhibited at the “Meeting Point under the Bridge”, an initiative carried out by Jerusalem‘s Muslala Artists Collective as part of the Israel Festival in Jerusalem (2015).
+* # Israel Festival
+  Interactive Installation *Hybrid Meeting Point* exhibited at the “Meeting Point under the Bridge”, an initiative carried out by Jerusalem‘s Muslala Artists Collective as part of the Israel Festival in Jerusalem (2015).
 
-* # Lullaby Box
-  Interactive Installation exhibited at Pfefferberg during the "LivingFuture!" conference, Berlin (2015).
+* # LivingFuture! conference 
+  Interactive Installation *Lullaby Box* exhibited at Pfefferberg during the "LivingFuture!" conference, Berlin (2015).
 
 * # Hybrid Letter Box - Enabling Civic Engagement in Local Environments
   Unteidig, Joost, Schubert, Herlo, Sametinger, Bergmann, Reiter, Sossa (2014): Spring Cumulus Conference, University of Aveiro.
 
-* # "Liebe Sonnenallee ..." Installation
-  13\. Kunst- und Kulturfestival NACHTUNDNEBEL in Neukoelln, Berlin (2013).
+* # Kulturfestival NACHTUNDNEBEL
+  "Liebe Sonnenallee ..." Installation exhibted at 13\. Kunst- und Kulturfestival NACHTUNDNEBEL in Neukoelln, Berlin (2013).
 
 * # Chimecloud - An Evocative, Responsive Sound Installation
   Dondana, Jepsen, Reiter (2013): 9th Student Interaction Design Research conference (SIDeR), Aarhus University.

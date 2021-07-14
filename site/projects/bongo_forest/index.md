@@ -15,7 +15,7 @@ color: 2
   <iframe src="http://player.vimeo.com/video/286836628?byline=0&color=ff9933" width="600" height="338" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 </div>
 
-Visitors can interact with the installation using a drum, that is placed in the middle of a clearing and senses the players touch. The signals is sent via radio to the sourounding drums, that activates them. Each drum reacts in a slightly different manner to the received signals. 
+Visitors can interact with the installation using a drum that is placed in the middle of a clearing and senses the players touch. The signal is sent via radio to the surounding drums, triggering an audio visual reaction. Each drum has its own responding pattern, reacting in a slightly different manner to the received signals. 
 
 <div class="gallery">
 {% image, "img1.jpeg", "Image of the Installation", null, "image" %}
