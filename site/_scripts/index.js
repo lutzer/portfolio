@@ -82,7 +82,7 @@ class SnapScrollContainer extends EventTarget {
     })
     window.addEventListener('resize', debounce(() => {
       this._computeScrollBounds()
-      this.snap()
+      // this.snap()
     }))
   } 
 
