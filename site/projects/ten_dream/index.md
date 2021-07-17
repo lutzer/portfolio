@@ -2,7 +2,7 @@
 title: "&#35;10 Dream"
 tags: project
 thumbnail: render.png
-color: 4
+color: 0
 date: 2020-08-01
 ---
 
