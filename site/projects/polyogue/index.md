@@ -6,7 +6,7 @@ color: 1
 date: 2016-08-01
 ---
 
-*Polylogue is an interactive installation and a hyper-local message feed. Through an open WIFI network, users in reach of the wireless signal can send text messages with their smartphones, tablets or computers. These messages get printed immediately on a paper roll that runs in-between two translucent, black boxes and are transformed into a material stream of consciousness.*
+*Polylogue is an interactive installation and a hyper-local message feed. Through an open WIFI network, users in reach of the wireless signal can send text messages with their smartphones, tablets or computers. These messages get printed immediately on a paper roll that runs in-between two translucent, black boxes.*
 
 <span class="more"></span>
 

@@ -6,7 +6,7 @@ color: 3
 date: 2013-01-01
 ---
 
-*The Hybrid Letterbox was originaly developed to serve as an interface for communicating and sharing ideas within local communities. Bridging the gap between the analogue and the digital, it allows everyone to take part in a discussion within the digital realm. Since the act of posting a letter to a mailbox is strongly ritualised and well understood by all generations, the hybrid letterbox focuses on the inclusion of digital strangers in digital discussions.*
+*The Hybrid Letterbox was originaly developed to serve as an interface for communicating and sharing ideas within local communities. Bridging the gap between the analogue and the digital, it allows everyone to take part in a discussion within the digital realm. The Hybrid Letterbox focuses on the inclusion of digital strangers in digital discussions.*
 
 <span class="more"></span>
 
