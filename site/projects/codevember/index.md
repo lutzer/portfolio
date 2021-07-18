@@ -3,7 +3,7 @@ title: Codevember Sketches
 tags: project
 thumbnail: day27.png
 date: 2020-01-31
-color: 2
+color: 6
 ---
 
 *These programatically Sketches is a growing collection of scripts that were created in the dark and rainy month of november. Similar to fast drawn graphical sketches, they were all created within a few hours. Instead of using a pencil, these works are created by code.*

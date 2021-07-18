@@ -10,8 +10,9 @@ date: 2015-07-01
 
 <span class="more"></span>
 
-<div class="gallery">
 {% image, "box_outside.jpg", "Outside of LullabyBox", null, "image" %}
+
+<div class="gallery">
 {% image, "tablet_inside.jpg", "Outside of LullabyBox", null, "image" %}
 {% image, "tablet3.jpg", "Outside of LullabyBox", null, "image" %}
 {% image, "thumb.jpg", "Outside of LullabyBox", null, "image" %}

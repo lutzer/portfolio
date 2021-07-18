@@ -12,11 +12,19 @@ date: 2021-05-01
 
 <div class="video">
   <video autoplay loop>
+    <source src="{% asset, 'playground2.mp4', 'videos' %}" type="video/mp4">
+  </video>
+</div>
+
+<div class="video">
+  <video autoplay loop>
     <source src="{% asset, 'playground.mp4', 'videos' %}" type="video/mp4">
   </video>
 </div>
 
-The survey is build around an interactive isometric tilemap, on which participants can place their favourite playground elements. All the assets were created in Blender, the interactive map was created with babylon.js. The interface was created with React. The survey can be found [here](http://spielplatz-schillerkiez.de)
+The survey is build around an interactive isometric tilemap, on which participants can place their favourite playground elements. All the assets were created in Blender, the interactive map was created with babylon.js. The interface was created with React. The online survey can be found [here](http://spielplatz-schillerkiez.de)
+
+
 
 <div class="gallery">
   {% image, "screen1.png", "Interface Screenshot", null, "image" %}
