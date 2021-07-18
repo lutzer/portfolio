@@ -1,7 +1,7 @@
 ---
 title: Spielplatz Schillerkiez
 tags: project
-thumbnail: thumb.png
+thumbnail: stream.png
 color: 4
 date: 2021-05-01
 ---
