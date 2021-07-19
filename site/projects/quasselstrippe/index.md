@@ -18,7 +18,7 @@ The tin can phone is a simple object that is mainly used by children. For TOOLS 
   <img src="{% asset, 'animation.gif', 'videos' %}" type="video/mp4">
 </div>
 
-Quasselstrippe makes sophisticated technology approachable without being a black box in terms of data security and accessibility. The goal is to develop a tool that is highly adaptable to specific needs and creates a playful way to engage in participation processes. It will be distributed as an open-source toolkit with manuals for the software and instructions for the hardware. The project's documentation can be found under [hallo-quasselstrippe.org](https://hallo-quasselstrippe.org/)
+Quasselstrippe makes sophisticated technology approachable without being a black box in terms of data security and accessibility. The goal is to develop a tool that is highly adaptable to specific needs and creates a playful way to engage in participation processes. It will be distributed as an open-source toolkit with manuals for the software and instructions for the hardware. The project's documentation can be found under [hallo-quasselstrippe.org](https://hallo-quasselstrippe.org/).
 
 {% image, "kit.jpeg", "Kit components", null, "image" %}
 
