@@ -11,15 +11,15 @@ $primary-color: #800080;
 $font1: "Inconsolata", monospace;
 $font2: "OpenSans", sans-serif;
 
-// first is bg-color, second is font-color
+// columns: bg-color, font-color, link color, navbar hover color
 $color-themes: 
-  0 #ffffff #000000 #800080, 
-  1 #000000 #ffffff #cc05cc,
-  2 #C8FF00 #000000 #769700,
-  3 #d1013c #ffffff #ff680f,
-  4 #00C8FF #000000 #004e83,
-  5 #413D3D #ffffff #ff6700,
-  6 #ffd602 #000000 #004e83;
+  0 #ffffff #000000 #800080 #000000, 
+  1 #000000 #ffffff #cc05cc #ffffff,
+  2 #C8FF00 #000000 #769700 #000000,
+  3 #d1013c #ffffff #ff680f #ffffff,
+  4 #00C8FF #000000 #004e83 #ffffff,
+  5 #413D3D #ffffff #ff6700 #ffffff,
+  6 #ffd602 #000000 #004e83 #ffffff;
 
 $theme-transition-time: 500ms;
 

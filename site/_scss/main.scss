@@ -159,7 +159,7 @@ body.header-not-at-top {
         color: nth($theme,4);
 
         &:hover {
-          color: white;
+          color: nth($theme,5);
         }
       }
     }
