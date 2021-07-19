@@ -12,10 +12,12 @@ date: 2021-06-30
 
 {% image, "tomma.jpeg", "Quasselstrippe in use", null, "image" %}
 
-The tin can phone is a simple object that is mainly used by children. For TOOLS we are building a concept of the tin can phone and turn it into a voice interface and dialogue instrument. Technically, it consists of a Raspberry Pi mini-computer with microphone and speaker. The user speaks and listens into the can. A voice controlled by the computer guides the user through the dialogue. The dialogues are meant to be adapted case-specifically by the institutions involved. The integrated speech recognition software recognizes core passages of the input and adapts the dialog accordingly. Statements from other users can be interwoven into the dialog. The anonymized answers are sorted and collected.  
+The tin can phone is a simple object that is mainly used by children. For TOOLS we are building a concept of the tin can phone and turn it into a voice interface and dialogue instrument. Technically, it consists of a Raspberry Pi mini-computer with microphone and speaker. The user speaks and listens into the can. A voice controlled by the computer guides the user through the dialogue. The dialogues are meant to be adapted case-specifically by the institutions involved. The integrated speech recognition software recognizes core passages of the input and adapts the dialog accordingly. Statements from other users can be interwoven into the dialog. The anonymized answers are sorted and collected.
 
-<div class="image">
-  <img src="{% asset, 'animation.gif', 'videos' %}" type="video/mp4">
+<div class="video">
+  <video autoplay loop>
+    <source src="{% asset, 'animation.mp4', 'videos' %}" type="video/mp4">
+  </video>
 </div>
 
 Quasselstrippe makes sophisticated technology approachable without being a black box in terms of data security and accessibility. The goal is to develop a tool that is highly adaptable to specific needs and creates a playful way to engage in participation processes. It will be distributed as an open-source toolkit with manuals for the software and instructions for the hardware. The project's documentation can be found under [hallo-quasselstrippe.org](https://hallo-quasselstrippe.org/).
