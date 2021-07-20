@@ -1,14 +1,8 @@
 @import "vars.scss";
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url('/assets/fonts/OpenSans-Bold.ttf')  format('truetype');
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'OpenSans';
-  src: url('/assets/fonts/OpenSans-Regular.ttf')  format('truetype');
+  font-family: 'Rubik';
+  src: url('/assets/fonts/Rubik-Regular.ttf')  format('truetype');
 }
 
 @font-face {
@@ -33,24 +27,25 @@ html, body {
 body {
   font-family: $font1;
   line-height: 1.5em;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.025em;
+  font-size: 12pt;
 }
 
 h1,h2 {
   font-family: $font2;
   letter-spacing: 0.02em;
   line-height: 1.2em;
+  font-weight: normal;
 }
 
 h1 {
   font-size: 250%;
   margin-top: 30px;
-  font-weight: bold;
 }
 
 h2 {
   font-size: 170%;
-  font-weight: normal;
+  margin-top: 50px;
   // border-bottom: 1px solid black;
   // padding: 10px 0;
 }

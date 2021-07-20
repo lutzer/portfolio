@@ -13,6 +13,7 @@
 
   .centered-iframe {
     text-align: center;
+    // border: 1px dashed black;
 
     iframe {
       width: 100%;
@@ -21,7 +22,21 @@
       border:none;
       margin:0 auto;
       pointer-events: none;
-      //border: 1px solid black;
+      background-color: white;
+      overflow: hidden;
     }
+
+    html {
+      overflow: hidden;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  a {
+    white-space: normal;
   }
 }
