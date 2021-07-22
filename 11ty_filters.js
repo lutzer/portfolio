@@ -1,5 +1,7 @@
 const _ = require("lodash")
 
+const MAX_ABSTRACT_LENGTH = 256
+
 module.exports = function(eleventyConfig, config) {
 
   // split url string in array for navigation bar
@@ -18,7 +20,14 @@ module.exports = function(eleventyConfig, config) {
   //extract abstract from project markdown
   eleventyConfig.addFilter("abstract", (str) => {
     let index = str.search("<span class=\"more\"></span>")
-    return index > 0 ? str.substring(0,index) : str.substring(0,256) + " ..."
+    return index > 0 && index <= MAX_ABSTRACT_LENGTH ?
+        str.substring(0, index)
+      : 
+        _.truncate(str, {
+          length: MAX_ABSTRACT_LENGTH,
+          separator: ' ',
+          omission: ' ...'
+        })
   })
 
   eleventyConfig.addFilter("decodeHtmlChars", (str) => {

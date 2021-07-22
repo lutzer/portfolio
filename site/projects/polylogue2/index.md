@@ -2,7 +2,7 @@
 title: Polylogue pt.2
 tags: project
 thumbnail: thumb.jpg
-color: 3
+color: 6
 date: 2016-01-01
 ---
 

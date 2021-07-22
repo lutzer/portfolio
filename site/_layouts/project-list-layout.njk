@@ -33,7 +33,6 @@ bodyClass: project-list-page
 </div>
 
 <script>
-  {
     const snapper = new Bundle.SnapScrollContainer({ containerId: 'project-list', itemClass: 'project-list-item', scrollTimeout: 250})
 
     const footer = document.getElementById("footer")
@@ -52,7 +51,6 @@ bodyClass: project-list-page
       const item = snapper.calculateClosestItem()
       const color = item.dataset.color
 
-
       if (themeElement.className == "color-"+color)
         return
 
@@ -62,5 +60,5 @@ bodyClass: project-list-page
       header.parentNode.replaceChild(newheader, header);
       themeElement.className = "color-"+color
     }
-  }
+
 </script>

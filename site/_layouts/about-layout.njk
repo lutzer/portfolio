@@ -8,8 +8,6 @@ layout: base-layout.njk
   {% include "uplink.njk" %}
 </div>
 
-
-
 <script>
   {
     function decodeMailAddress() {
@@ -23,6 +21,21 @@ layout: base-layout.njk
 
       mailLink.innerHTML = decodeMailAddress()
       mailLink.setAttribute("href", "mailto:"+decodeMailAddress())
+    })
+
+    const anchorLinks = Array.from(document.getElementsByClassName("anchor-link"))
+    anchorLinks.forEach((link) => {
+      link.addEventListener("click", (e) => {
+        const targetId = e.target.getAttribute("href")
+        const anchor = document.querySelector(targetId);
+        if (anchor) {
+          window.scrollTo({
+            top: anchor.offsetTop,
+            behavior: "smooth"
+          })
+          e.preventDefault()
+        }
+      })
     })
   }
 </script>
