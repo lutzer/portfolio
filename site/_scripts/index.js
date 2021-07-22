@@ -7,6 +7,9 @@ const { takeUntil } = require('rxjs/operators/takeUntil')
 const { switchMap } = require('rxjs/operators/switchMap')
 const { mapTo } = require('rxjs/operators/mapTo')
 
+// add smooth scrolling for safari
+require('smoothscroll-polyfill').polyfill();
+
 const scrollToTop = function(e) {
   window.scrollTo({ behavior: 'smooth', top: 0 })
   e.preventDefault()

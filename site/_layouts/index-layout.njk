@@ -11,7 +11,9 @@ layout: base-layout.njk
 
 <script>
   const onFrameClicked = function() {
-    document.location.reload()
+    // document.location.reload()
+    const sketch = document.getElementById('sketch')
+    sketch.contentWindow.location.reload();
   }
   
   {
