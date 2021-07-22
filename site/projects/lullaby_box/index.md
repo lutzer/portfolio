@@ -22,6 +22,8 @@ The Lullaby Box lets you record and allocate lullabies to the region the singing
 
 The visitor can enter the dome shapped Library Box and record his facourite lullaby. In the next step he/she enters the place where the lullaby was learned.
 
+Listen to the [recorded lullabies](http://projects.lu-re.de/lullaby/).
+
 <div class="gallery">
 {% image, "exhibition2.jpg", "Image of exhibition", null, "image" %}
 {% image, "exhibition3.jpg", "Image of exhibition", null, "image" %}
