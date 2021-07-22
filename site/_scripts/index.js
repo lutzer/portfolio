@@ -55,6 +55,7 @@ class SnapScrollContainer extends EventTarget {
   constructor({ containerId, itemClass, scrollTimeout = 250 }) {
     super()
 
+    this.scrollContainer = document.window
     this.container = document.getElementById(containerId)
     this.containerItems = Array.from(document.getElementsByClassName(itemClass))
     this.itemBounds = []
