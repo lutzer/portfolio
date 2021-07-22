@@ -26,9 +26,9 @@ html, body {
 
 body {
   font-family: $font1;
-  line-height: 1.6em;
+  line-height: 1.5em;
   letter-spacing: 0.025em;
-  font-size: 13pt;
+  font-size: $font-size;
 }
 
 h1,h2 {

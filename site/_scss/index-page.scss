@@ -9,7 +9,7 @@
 
   .content {
     margin: auto auto;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
   }
 
   .centered-iframe {
@@ -38,12 +38,12 @@
   // } 
   
   a:not(.page-link) {
-    opacity: 0.6;
-    background-color: #769700;
+    background: none;
+    color: $primary-color;
+    padding: 0;
 
     &:hover {
-      color: #769700;
-      background: none;
+      text-decoration: underline;
     }
   }
 }
