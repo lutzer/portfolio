@@ -43,7 +43,7 @@ module.exports = function(eleventyConfig, config) {
     const outputFile = randomstring.generate() + "-" + file
 
     fs.mkdirSync(outputDir, { recursive: true });
-    fs.promises.copyFile(inputPath, path.join(outputDir, outputFile));
+    await fs.promises.copyFile(inputPath, path.join(outputDir, outputFile));
     return path.join("/assets", folder, outputFile)
   }
 
