@@ -9,7 +9,7 @@
 
   .content {
     margin: auto auto;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
   }
 
   .centered-iframe {
@@ -41,9 +41,10 @@
     background: none;
     color: $primary-color;
     padding: 0;
+    border-bottom: 1px solid;
 
     &:hover {
-      text-decoration: underline;
+      border-bottom: none;
     }
   }
 }
