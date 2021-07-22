@@ -25,10 +25,9 @@
     top: 0;
     width: $content-width;
     z-index: 99;
-    font-size: $font-size;
+    -webkit-text-size-adjust: none;
     
     ul {
-      // background-color: white;
       width: 100%;
     }
   }

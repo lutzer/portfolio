@@ -20,7 +20,7 @@ module.exports = function(eleventyConfig, config) {
   //extract abstract from project markdown
   eleventyConfig.addFilter("abstract", (str) => {
     let index = str.search("<span class=\"more\"></span>")
-    return index > 0 && index <= MAX_ABSTRACT_LENGTH ? str.substring(0,index) : str.substring(0,MAX_ABSTRACT_LENGTH) + " ..."
+    return index > 0 && index < MAX_ABSTRACT_LENGTH ? str.substring(0,index) : str.substring(0,MAX_ABSTRACT_LENGTH) + " ..."
   })
 
   eleventyConfig.addFilter("decodeHtmlChars", (str) => {
