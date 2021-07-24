@@ -14,82 +14,108 @@ Get in touch with me by writing to <a id="email-address" href="">lutz AT lu-re D
 
 ## Exhibtions & Publications
 
-* # 48 Stunden Neukölln
+* # 2021
+  **48 Stunden Neukölln** 
   Contribution of digital sketches to the PARACHUTE(S) Project of 48h Neukölln (2021).
 
-* # Ape Finger of the Stars
+* # 2019 
+  **Ape Finger of the Stars**
   Musical Performances at Du Beast, Nivili, Noiseberg and Loopohole in Berlin (2019).
 
-* # Interpart
+* # 2019
+  **Interpart**
   Interactive, multi-langual Installation exhibited at Stadtwerkstatt in Berlin (2019), Rathaus Wiesbaden (2019).
 
-* # Speculum Artium | Trbovlje New Media Festival
+* # 2019
+  **Speculum Artium | Trbovlje New Media Festival**
   Interactive Installation *Polylogue pt. 2* exhibited at Speculum Artium, Slovenia (2019).
 
-* # Wilde Moehre Festival
+* # 2018
+  **Wilde Moehre Festival**
   Audio Visual Installation *Bongo Forest* exhibited at Wilde Moehre Festival, Drebkau (2018).
 
-* # Republica
+* # 2017
+  **Republica**
   Interactive Installation *Polyloge* exhibited at Republica, Berlin (2017).
 
-* # Venice Biennale
+* # 2016
+  **Venice Biennale**
   Interactive Installation *Polylogue pt. 2* exhibited at the Greek Pavillion of Venice Biennale (2016).
 
-* # Radical Networks
+* # 2016
+  **Radical Networks**
   Interactive Installation *Polylogue* exhibited at Radical Networks, New York (2016).
   
-* # Speculum Artium | Trbovlje New Media Festival
+* # 2016
+  **Speculum Artium | Trbovlje New Media Festival**
   Interactive Installation *Polylogue* exhibited at Speculum Artium, Slovenia (2016).
   
-* # Platine Festival
+* # 2016
+  **Platine Festival**
   Interactive Installation *Polylogue* exhibited at Platine Festival, Cologne (2016).
 
-* # Diddley Bow Workshop
+* # 2016
+  **Diddley Bow Workshop**
   Instrument Building Workshop at Wilde Möhre Festival, Drebkau (2016).
 
-* # The MAZI archive
+* # 2016
+  **The MAZI archive**
   Prototype exhibited in Prinzessinengarten, Berlin (2016).
 
-* # re:publica | TEN
+* # 2016
+  **re:publica | TEN**
   Interactive Installation *Lullaby Box* exhibited at re:publica | TEN conference, Berlin (2016).
 
-* # Transmediale 16
+* # 2016
+  **Transmediale 16**
   Interactive Installation *Polyloge* exhibited at Transmediale 16 in Berlin (2016).
 
-* # Honeybees Learn Landscape Features during Exploratory Orientation Flights
+* # 2016
+  **Honeybees Learn Landscape Features during Exploratory Orientation Flights**
   Jacqueline Degen, Andreas Kirbach, Lutz Reiter, Gisela Manz,Uwe Greggers, Randolf Menzel in Current Biology 26, 2800–2804 (2016)
 
-* # Living Future! Conference 
+* # 2015
+  **Living Future! Conference**
   Workshop about Community Wireless Networks held with Andreas Unteidig at the Living Future! Conference in Tel Aviv (2015).
 
-* # Pinpoint Mehringplatz
+* # 2015
+  **Pinpoint Mehringplatz**
   Interactive Installation exhibited at Mehringplatz in Berlin-Kreuzberg (2015).
 
-* # The Hybrid Meeting Point - An urban infrastructure for interacting across boundaries of difference
+* # 2015
+  **The Hybrid Meeting Point - An urban infrastructure for interacting across boundaries of difference**
   Andreas Unteidig, Bianca Herlo, Lutz Reiter (2015): Hybrid City 2015: Data to the People, Athens: URIAC, At Athens, Greece.
 
-* # Israel Festival
+* # 2015
+  **Israel Festival**
   Interactive Installation *Hybrid Meeting Point* exhibited at the “Meeting Point under the Bridge”, an initiative carried out by Jerusalem‘s Muslala Artists Collective as part of the Israel Festival in Jerusalem (2015).
 
-* # LivingFuture! conference 
+* # 2015
+  **LivingFuture! conference**
   Interactive Installation *Lullaby Box* exhibited at Pfefferberg during the "LivingFuture!" conference, Berlin (2015).
 
-* # Hybrid Letter Box - Enabling Civic Engagement in Local Environments
+* # 2014
+  **Hybrid Letter Box - Enabling Civic Engagement in Local Environments**
   Unteidig, Joost, Schubert, Herlo, Sametinger, Bergmann, Reiter, Sossa (2014): Spring Cumulus Conference, University of Aveiro.
 
-* # Kulturfestival NACHTUNDNEBEL
-  "Liebe Sonnenallee ..." Installation exhibted at 13\. Kunst- und Kulturfestival NACHTUNDNEBEL in Neukoelln, Berlin (2013).
+* # 2013
+  **Kulturfestival NACHTUNDNEBEL**
+  *"Liebe Sonnenallee ..."* Installation exhibted at 13\. Kunst- und Kulturfestival NACHTUNDNEBEL in Neukoelln, Berlin (2013).
 
-* # Chimecloud - An Evocative, Responsive Sound Installation
+* # 2013
+  **Chimecloud - An Evocative, Responsive Sound Installation**
   Dondana, Jepsen, Reiter (2013): 9th Student Interaction Design Research conference (SIDeR), Aarhus University.
 
-* # Disconnection
+* # 2013
+  **Disconnection**
   Dondana, Reiter (2013): 9th Student Interaction Design Research conference (SIDeR), Aarhus University.
 
-* # Open source tracking and analysis of adult Drosophila locomotion in Buridan's paradigm with and without visual targets
+* # 2012 
+  **Open source tracking and analysis of adult Drosophila locomotion in Buridan's paradigm with and without visual targets**
   Colomb, Reiter, Blaszkiewicz, Wessnitzer, Brembs (2012): PLoS ONE 7(8): e42247. doi:10.1371/journal.pone.0042247
 
-* # A common frame of reference for learned and communicated vectors in honeybee navigation
+* # 2013
+  **A common frame of reference for learned and communicated vectors in honeybee navigation**
   Menzel, Kirbach, Haass, Fischer, Fuchs, Koblofsky, Lehmann, Reiter, Meyer, Nguyen, Jones, Norton, Greggers (2011): Current Biology, Volume 21, Issue 8, p645-650
 
 </div>

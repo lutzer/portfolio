@@ -41,7 +41,6 @@
   }
 
   #jobs, #education {
-
     li {
       display:flex;
 
@@ -53,12 +52,30 @@
       p {
         flex: 1 1 0;
       }
-    }
 
-    // h1 {
-    //   display: inline-block;
-    //   float:left;
-    // }
+      strong {
+        display: block;
+      }
+    }
+  }
+
+  #exhibitions {
+    li {
+      display:flex;
+
+      h1 {
+        width: 60px;
+        flex: 0 0 auto;
+      }
+
+      p {
+        flex: 1 1 0;
+      }
+
+      strong {
+        display: block;
+      }
+    }
   }
 
   
