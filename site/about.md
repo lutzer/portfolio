@@ -114,7 +114,7 @@ Get in touch with me by writing to <a id="email-address" href="">lutz AT lu-re D
   **Open source tracking and analysis of adult Drosophila locomotion in Buridan's paradigm with and without visual targets**
   Colomb, Reiter, Blaszkiewicz, Wessnitzer, Brembs (2012): PLoS ONE 7(8): e42247. doi:10.1371/journal.pone.0042247
 
-* # 2013
+* # 2011
   **A common frame of reference for learned and communicated vectors in honeybee navigation**
   Menzel, Kirbach, Haass, Fischer, Fuchs, Koblofsky, Lehmann, Reiter, Meyer, Nguyen, Jones, Norton, Greggers (2011): Current Biology, Volume 21, Issue 8, p645-650
 
