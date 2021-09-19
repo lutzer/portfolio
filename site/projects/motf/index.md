@@ -2,7 +2,7 @@
 title: Memories of the Future
 tags: project
 thumbnail: screen1.jpeg
-color: 6
+color: 3
 date: 2020-04-01
 ---
 
@@ -14,7 +14,7 @@ The reconstruction of past experiences always conveys present perspectives, ideo
 
 By reading the narratives of the past, we are able to develop strategies to envision the future, to imagine intercultural spaces in a highly diverse setup. We have the capacities to connect, on a local as well as global scale, initiatives that embrace the hidden memories of a place and translate them into a better understanding of the specific dynamics. Those dynamics determine and regulate present as well as future interactions.
 
-In the conference track “Memories of the Future” we have worked on how to collect and represent the personal stories of residents in Ajami/Jaffa, gather insights into personal as well as collective experiences in a diverse society and build up on it for future perspectives. The track addressed the value of storytelling for understanding current societal issues and anticipate future relations and meaningful encounters in public space.  
+In the conference track “Memories of the Future” we have worked on how to collect and represent the personal stories of residents in Ajami/Jaffa, gather insights into personal as well as collective experiences in a diverse society and build up on it for future perspectives. The track addressed the value of storytelling for understanding current societal issues and anticipate future relations and meaningful encounters in public space.
 
 <div class="gallery">
 {% image, "screen1.jpeg", "App screenshot", null, "image" %}

@@ -20,6 +20,7 @@ html generator for lu-re.de
   * run `chmod +x ~/lu-re.git/hooks/post-receive`
   * run `chmod 755 <WWW_DIR>`
 * add remote to local git with `git remote add production user@yourserver.com:lu-re.git`
+* then push changes with `git push production`
 
 ## Development
 
