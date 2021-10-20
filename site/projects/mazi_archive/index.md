@@ -1,12 +1,12 @@
 ---
 title: Mazi Archive
-tags: hidden-project
+tags: project
 thumbnail: thumb.jpg
-color: 0
-date: 2015-01-01
+color: 6
+date: 2015-03-01
 ---
 
-*MAZI /Berlin is a pilot project that explores the relationship between network technologies, civic action, commons and informal learning. MAZI means "together" in Greek, and under this idea we work on the development of a DIY networking toolkit for location-based collective awareness.*
+*MAZI /Berlin is a pilot project that explores the relationship between network technologies, civic action, commons and informal learning. MAZI means together in Greek, and under this idea we work on the development of a DIY networking toolkit for location-based collective awareness.*
 
 <span class="more"></span>
 
@@ -23,4 +23,10 @@ The tool consists on a physical recording artifact that helps to create an inter
   {% image, "web2.jpeg", "Web Interface", null, "image" %}
   {% image, "web3.jpeg", "Web Interface", null, "image" %}
   {% image, "web4.jpeg", "Web Interface", null, "image" %}
+</div>
+
+<div class="gallery">
+  {% image, "app1.jpeg", "App Interface", null, "image" %}
+  {% image, "app2.jpeg", "App Interface", null, "image" %}
+  {% image, "app3.jpeg", "App Interface", null, "image" %}
 </div>

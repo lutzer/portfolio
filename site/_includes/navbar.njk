@@ -1,6 +1,11 @@
 <ul class="navbar">
   <li><a href="/">home</a></li>
   {% for path in page.url | urlsplit %}
-    <li><a href="{{ path.url }}">{{ path.name }}</a></li>
+    {% if navbarWithSlug and loop.revindex == 2 %}
+      {% set url = [path.url, "#", page.fileSlug] | join %}
+    {% else %}
+      {% set url = path.url %}
+    {% endif %}
+    <li><a href="{{ url }}">{{ path.name }}</a></li>
   {% endfor %}
 </ul>
