@@ -2,7 +2,7 @@
 title: Chimecloud
 tags: project
 thumbnail: thumb.jpg
-color: 0
+color: 4
 date: 2013-01-01
 ---
 *The Chimecloud is an evocative and responsive sound and visual installation aiming to motivate users to actively take part in the creation of soundscapes using their body and movements in interaction with the space surrounding them. Transforming nature’s principles, where the wind is a key element creating natural soundscapes, the Chimecloud make people’s presence and movement audible.*

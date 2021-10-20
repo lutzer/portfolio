@@ -127,7 +127,7 @@ Get in touch with me by writing to <a id="email-address" href="">lutz AT lu-re D
   *Researcher*: Development of a DIY Voice Interface Kit at Design Research Lab of the University of Arts Berlin. *Freelancer*: Full-stack development of several web applications.
 
 * # 2017 - 2020
-  Working as a *Creative Technologist* at Future Center Europe in Potsdam.
+  Working as a *Creative Technologist* in the UX Design department at Future Center Europe (Volkswagen AG) in Potsdam on the topics of autonomous driving and mobility services.
 
 * # 2016 - 2017
   Working as a *Freelance Designer and Programmer*.

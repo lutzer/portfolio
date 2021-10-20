@@ -6,7 +6,7 @@ color: 3
 date: 2015-01-01
 ---
 
-*The Meeting Point is an interactive installation consisting of an open and exclusively local WIFI network, a projection and the Hybrid Letterbox. It was created for and shown as part of the “Meeting Point under the Bridge”, an initiative carried out by Jerusalem‘s Muslala Artists Collective and as part of the Israel Festival 2015.*
+*“The Meeting Point“ is an interactive installation consisting of an open and exclusively local WIFI network, a projection and the Hybrid Letterbox. It was created for and shown as part of the “Meeting Point under the Bridge”, an initiative carried out by Jerusalem‘s Muslala Artists Collective and as part of the Israel Festival 2015.*
 
 <span class="more"></span>
 
