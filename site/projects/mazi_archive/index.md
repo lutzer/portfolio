@@ -30,3 +30,5 @@ The tool consists on a physical recording artifact that helps to create an inter
   {% image, "app2.jpeg", "App Interface", null, "image" %}
   {% image, "app3.jpeg", "App Interface", null, "image" %}
 </div>
+
+*This Project was done as part of the Project MAZI at Design Research Lab Berlin*

@@ -38,3 +38,4 @@ Thirtysix servo motors move the wooden ”strikers”, which in return hit the t
 
 {% image, "firemans.jpg", "Minor problems during construction", null, "image" %}
 		
+*This Project was done in collaboration with Arnim Jepsen und Marco Dondana*

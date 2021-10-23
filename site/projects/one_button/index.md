@@ -1,5 +1,5 @@
 ---
-title: One Button
+title: OneButton
 tags: project
 thumbnail: thumb2.png
 date: 2019-05-01

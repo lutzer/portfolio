@@ -31,3 +31,5 @@ Depending on the day’s program, the Hybrid Meeting Point has different topics,
   {% image, "writing_letters.jpg", "Image", null, "image" %}
   {% image, "writing.jpg", "Image", null, "image" %}
 </div>
+
+*This Project was done in collaboration with Andreas Unteidig.*

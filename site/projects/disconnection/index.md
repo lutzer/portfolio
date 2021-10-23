@@ -38,4 +38,5 @@ The observer is meant to keep the receiver always in the sight of his camera but
   {% image, "7.jpg", "Pictures of the exhibition", null, "image" %}
   {% image, "8.jpg", "Pictures of the exhibition", null, "image" %}
 </div>
-		
+	
+*This Project was done in collaboration with Marco Dondana*
