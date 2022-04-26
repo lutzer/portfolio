@@ -13,6 +13,9 @@ Get in touch with me by writing to <a id="email-address" href="">lutz AT lu-re D
 <div id="exhibitions" class="list">
 
 ## Exhibtions & Publications
+* # 2022
+  **Quasselstrippe Workshop** 
+  Workshop im Rahmen des Wissenschaftsjahrs 2022, Futurium (2022).
 
 * # 2021
   **48 Stunden Neukölln** 

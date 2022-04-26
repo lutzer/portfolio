@@ -14,17 +14,15 @@ date: 2021-06-30
 
 The tin can phone is a simple object that is mainly used by children. For TOOLS we are building a concept of the tin can phone and turn it into a voice interface and dialogue instrument. Technically, it consists of a Raspberry Pi mini-computer with microphone and speaker. The user speaks and listens into the can. A voice controlled by the computer guides the user through the dialogue. The dialogues are meant to be adapted case-specifically by the institutions involved. The integrated speech recognition software recognizes core passages of the input and adapts the dialog accordingly. Statements from other users can be interwoven into the dialog. The anonymized answers are sorted and collected.
 
-<div class="video">
-  <video autoplay loop>
-    <source src="{% asset, 'animation.mp4', 'videos' %}" type="video/mp4">
-  </video>
+<div class="iframe-with-asp" style="padding-bottom: 56%;">
+  <iframe width="600" height="338" src="https://www.youtube.com/embed/yt-x_HZzqiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 Quasselstrippe makes sophisticated technology approachable without being a black box in terms of data security and accessibility. The goal is to develop a tool that is highly adaptable to specific needs and creates a playful way to engage in participation processes. It will be distributed as an open-source toolkit with manuals for the software and instructions for the hardware. The project's documentation can be found under [hallo-quasselstrippe.org](https://hallo-quasselstrippe.org/).
 
 {% image, "kit.jpeg", "Kit components", null, "image" %}
 
-Together with the hardware toolkit, we developed an easy to use library to configure dialogs by using a visual programming language. It is able to transcribe speech and recognize patterns and answers to react on the users input. It allows to save the received inputs and send it to other endpoints
+Together with the hardware toolkit, we developed an easy to use library to configure dialogs by using a visual programming language. It is able to transcribe speech and recognize patterns and answers to react on the users input. It allows to save the received inputs and send it to other endpoints.
 
 {% image, "dialog.png", "Kit components", null, "image" %}
 
@@ -38,6 +36,12 @@ The toolkit is primarily aimed at cultural institutions, educational institution
 {% image, "diy5.jpeg", "Kit assembly", null, "image" %}
 {% image, "diy6.jpeg", "Kit assembly", null, "image" %}
 {% image, "diy7.jpeg", "Kit assembly", null, "image" %}
+</div>
+
+<div class="video">
+  <video autoplay loop>
+    <source src="{% asset, 'animation.mp4', 'videos' %}" type="video/mp4">
+  </video>
 </div>
 
 *Created in collaboration with Malte Bergmann, Tomma Suki Hinrichsen and Rebecca Merdes at Design Research Lab.*
