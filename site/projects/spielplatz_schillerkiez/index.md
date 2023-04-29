@@ -22,7 +22,7 @@ date: 2021-05-01
   </video>
 </div>
 
-The survey is build around an interactive isometric tilemap, on which participants can place their favourite playground elements. All the assets were created in Blender, the interactive map was created with babylon.js. The interface was created with React. The online survey can be found [here](http://spielplatz-schillerkiez.de).
+The survey is build around an interactive isometric tilemap, on which participants can place their favourite playground elements. All the assets were created in Blender, the interactive map was created with babylon.js. The interface was created with React. The online survey can be found [here](https://playground-survey-server.herokuapp.com/#/).
 
 
 
