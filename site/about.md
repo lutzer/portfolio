@@ -13,6 +13,15 @@ Get in touch with me by writing to <a id="email-address" href="">lutz AT lu-re D
 <div id="exhibitions" class="list">
 
 ## Exhibtions & Publications
+
+* # 2022
+  **Hello Quasselstrippe** 
+  Exhibition at Weizenbaum Conference 2022.
+
+* # 2022
+  **Hello Quasselstrippe** 
+  Exhibition and Workshop at re:publica 2022
+
 * # 2022
   **Quasselstrippe Workshop** 
   Workshop im Rahmen des Wissenschaftsjahrs 2022, Futurium (2022).
@@ -125,6 +134,8 @@ Get in touch with me by writing to <a id="email-address" href="">lutz AT lu-re D
 <div id="jobs" class="list">
 
 ## Jobs
+* # 2022 - now
+  *Creative Coder* at NEEEU, Development of AR Experiences and Platform Applications
 
 * # 2020 - 2021
   *Researcher*: Development of a DIY Voice Interface Kit at Design Research Lab of the University of Arts Berlin. *Freelancer*: Full-stack development of several web applications.
