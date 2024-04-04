@@ -2,7 +2,7 @@
 title: Quasselstrippe
 tags: project
 thumbnail: thumb.jpeg
-color: 6
+color: 4
 date: 2021-06-30
 ---
 
