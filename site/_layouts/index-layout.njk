@@ -4,17 +4,26 @@ layout: base-layout.njk
 <div class="index-layout">
   <div class="content">
     {# {% include "navbar.njk" %} #}
+    <div class="centered-iframe" onClick="onFrameClicked()">
+      <iframe id="sketch" src="/blank/"></iframe>
+    </div>
     {{ content | safe }}
     </div>
   </div>
 </div>
 
 <script>
+
+  const sketches = "{{ sketches }}".split(",").map(function(i) { return i.trim()})
+
   const onFrameClicked = function() {
-    // document.location.reload()
     const sketch = document.getElementById('sketch')
-    sketch.contentWindow.location.reload();
+    sketch.src = sketches[Math.floor(Math.random()*sketches.length)]
   }
+
+  window.addEventListener("load", function() {
+    onFrameClicked();
+  })
   
   {
     const onResize = function() {
