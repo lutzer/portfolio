@@ -4,6 +4,7 @@ tags: project
 thumbnail: thumb.jpg
 color: 1
 date: 2012-04-01
+visible: false
 ---
 *This project aims to explore our self perception by disconnecting and rerouting our visual and auditory perception from our body. It does so, by letting one person slip into the role of the observer. Another person becomes the receiver. The receiver’s perspective gets replaced by the observer’s, giving him control over your vision and sense of hearing.*
 

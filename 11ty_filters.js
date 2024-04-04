@@ -35,4 +35,8 @@ module.exports = function(eleventyConfig, config) {
       return String.fromCharCode(dec);
     });
   })
+
+  eleventyConfig.addFilter("filterVisible", (array) => {
+    return array.filter((element) => element.data.visible)
+  })
 }

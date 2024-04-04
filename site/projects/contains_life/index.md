@@ -4,6 +4,7 @@ tags: project-hidden
 thumbnail: thumb.jpg
 color: 0
 date: 2012-04-01
+visible: false
 ---
 *Verdrängte Realitäten erobern Raum, sprengen die Grenzen alltäglicher Wahrnehmung und machen sich auf, die Stadt zurück zu erobern.*
 

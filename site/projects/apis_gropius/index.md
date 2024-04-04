@@ -32,6 +32,4 @@ Watch Apis Gropius Pollinating the architecture and constructing their hives.
 {% image, "apis_screen3.webp", "", null, "image contain" %}
 </div>
 
-
-
-*Created by NEEEU in collaboration with the Gropius Bau team and Ah!Kosmos*
+*Created with the team at NEEEU in collaboration with the Gropius Bau and Ah!Kosmos*

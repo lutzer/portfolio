@@ -8,7 +8,7 @@ bodyClass: project-list-page
       {% include "navbar.njk" %}
     </div>
     <div id="project-list">
-      {%- for project in collections.project | reverse -%}
+      {%- for project in collections.project | filterVisible | reverse  -%}
         <div id="{{project.fileSlug}}" class="project-list-item" data-color="{{ project.data.color }}">
           <div class="center">
             <h2>{{ project.data.title | safe }}</h2>

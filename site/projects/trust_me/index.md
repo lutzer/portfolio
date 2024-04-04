@@ -4,6 +4,7 @@ tags: project
 thumbnail: thumb.jpg
 color: 0
 date: 2014-01-01
+visible: false
 ---
 
 *Interactive digital prototypes that were created and explored together with the Design Research Lab and Bundesdruckerei in 2014. The prototypes were ment to try out interaction patterns, animations and metaphors to create a new interface for the security technology 'trust-me', a multiple sandbox operating system.*
