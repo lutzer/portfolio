@@ -30,7 +30,7 @@ navbarWithSlug: true
     const images = Array.from(document.getElementsByClassName('image'))
     images.forEach( (ele) => {
       ele.addEventListener('click', (event) => {
-        if (event.target.className != 'image')
+        if (!event.target.className.includes('image'))
           return false
         var pictureElement = event.target.cloneNode(true)
         overlayImgElement.replaceChildren(...[pictureElement])

@@ -2,7 +2,7 @@
 title: Apis Gropius
 tags: project
 thumbnail: apis3.webp
-color: 6
+color: 0
 date: 2022-10-01
 ---
 
@@ -27,9 +27,9 @@ Watch Apis Gropius Pollinating the architecture and constructing their hives.
 {% image, "apis2.webp", "Building of the hive", null, "image" %}
 
 <div class="gallery">
-{% image, "apis_screen1.webp", "", null, "image" %}
-{% image, "apis_screen2.webp", "", null, "image" %}
-{% image, "apis_screen3.webp", "", null, "image" %}
+{% image, "apis_screen1.webp", "", null, "image contain" %}
+{% image, "apis_screen2.webp", "", null, "image contain" %}
+{% image, "apis_screen3.webp", "", null, "image contain" %}
 </div>
 
 

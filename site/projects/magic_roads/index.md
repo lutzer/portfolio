@@ -27,9 +27,9 @@ The story of Lucius and the augmented reality scenes, which make skeletons dance
 
 
 <div class="gallery">
-{% image, "dices.png", "", null, "image" %}
-{% image, "treueid.png", "", null, "image" %}
-{% image, "chicken.png", "", null, "image" %}
+{% image, "dices.png", "", null, "image contain" %}
+{% image, "chicken.png", "", null, "image contain" %}
+{% image, "treueid.png", "", null, "image contain" %}
 </div>
 
 *Created by NEEEU in collaboration with the LWL Museum Haltern and Ah!Kosmos*

@@ -26,7 +26,6 @@
       pointer-events: none;
     }
   }
-  
 
   .gallery {
     display: flex;
@@ -46,6 +45,14 @@
         max-height: 300px;
         object-fit: cover;
         pointer-events: none;
+      }
+
+      &.contain {
+
+        img {
+          max-height: 400px;
+          object-fit: contain;
+        }
       }
 
     }
