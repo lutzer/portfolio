@@ -11,7 +11,7 @@ color: 6
 <span class="more"></span>
 
 <div class="iframe-with-asp" style="padding-bottom: 100%;">
-  <iframe src="https://lutzer.github.io/codevember19/day01-contrast-fullscreen.html" width="512" height="512"></iframe>
+  <iframe src="https://lutzer.github.io/codevember19/day01-contrast.html" width="512" height="512"></iframe>
 </div>
 
 The sketches are made using canvas2d and threejs. All sketches can be found under [lutzer.github.io/codevember19/](https://lutzer.github.io/codevember19/).

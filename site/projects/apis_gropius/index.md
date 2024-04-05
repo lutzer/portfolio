@@ -10,9 +10,12 @@ date: 2022-10-01
 
 <span class="more"></span>
 
-<div class="iframe-with-asp" style="padding-bottom: 56%;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/wXO9s2QoKg8?si=UvNdJZvA7wG4avwE&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+<a class="no-decoration" target="blank" href="https://vimeo.com/726038949">
+  {% image, "video_screenshot.png", "Video", null, "image no-link" %}
+</a>
+
+[Watch the app teaser](https://vimeo.com/726038949).
+
 
 The Apis Gropius experience is built for Augmented Reality, a technology that allows it to recognise features of the space. This approach to UX and technology allows the visitor to enjoy a seamless experience and focus on the art piece. The AR visualises moving bees, hives, floral and botanical spaces, and swarms. Through them, visitors will follow the story and bee evolution, raising questions about the importance of bees to our ecosystems.
 
