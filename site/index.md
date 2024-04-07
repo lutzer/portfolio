@@ -2,7 +2,16 @@
 layout: index-layout.njk
 title: hej
 date: Last Modified
-sketches: https://lutzer.github.io/codevember19/day02-geometric.html, https://lutzer.github.io/codevember19/day01-contrast.html, https://lutzer.github.io/codevember19/day03-deep.html, https://lutzer.github.io/codevember19/day04-big.html, https://lutzer.github.io/codevember19/day05-light.html, https://lutzer.github.io/codevember19/day07-shape-loop.html, https://lutzer.github.io/codevember19/day27-moon.html
+sketches: [
+    "https://lutzer.github.io/codevember19/day02-geometric.html", 
+    "https://lutzer.github.io/codevember19/day01-contrast.html", 
+    "https://lutzer.github.io/codevember19/day03-deep.html", 
+    "https://lutzer.github.io/codevember19/day04-big.html", 
+    "https://lutzer.github.io/codevember19/day05-light.html", 
+    "https://lutzer.github.io/codevember19/day07-shape-loop.html", 
+    "https://lutzer.github.io/codevember19/day27-moon.html"
+]
+start_sketch: 4
 ---
 
 # Hej, my name is Lutz Reiter.

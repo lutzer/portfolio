@@ -5,7 +5,7 @@ layout: base-layout.njk
   <div class="content">
     {# {% include "navbar.njk" %} #}
     <div class="centered-iframe" onClick="onFrameClicked()">
-      <iframe id="sketch" src="/blank/"></iframe>
+      <iframe id="sketch" src="{{ sketches[start_sketch] }}"></iframe>
       <div class="caption">↑ Click to reload</div>
     </div>
     {{ content | safe }}
@@ -16,14 +16,17 @@ layout: base-layout.njk
 <script>
 
   const sketches = "{{ sketches }}".split(",").map(function(i) { return i.trim()})
+  var current_sketch = {{ start_sketch }}
 
   const onFrameClicked = function() {
     const sketch = document.getElementById('sketch')
-    sketch.src = sketches[Math.floor(Math.random()*sketches.length)]
+    current_sketch +=  1 + Math.floor(Math.random()*(sketches.length-1))
+    current_sketch %= sketches.length
+    sketch.src = sketches[current_sketch]
   }
 
   window.addEventListener("load", function() {
-    onFrameClicked();
+    //onFrameClicked();
   })
   
   {
